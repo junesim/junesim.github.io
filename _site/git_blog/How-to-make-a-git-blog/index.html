@@ -309,7 +309,9 @@
 
 <p>이렇게 하면 기초적인 설정은 끝났다. 이제 테마를 이용해 블로그의 레이아웃을 생성해보자.Jekyll의 경우에는 정말 많은 테마들이 있는데, 이 블로그의 경우에는 <a href="https://github.com/mmistakes/minimal-mistakes">minimal-mistakes</a> 테마를 이용해 작성됐다. 많은 분들이 이 테마를 이용해 자료가 많기 때문에 처음에 블로그를 생성하는 분들에게 추천드린다.</p>
 
-<p>위 깃을 클론하고 이를 자신이 만든 레포지터리에 커밋하면 테마가 적용된다. 여기서 config.yml을 수정해서 사이트를 설정해주면 되는데, 먼저 URL과 Author 부분을 설정해주도록 하자. 지금 이 블로그의 테마는 dark 테마로 설정 되어 있다. 현재 깃에서 직접 수정하고 반영하는 경우 블로그의 수정을 확인하려면 매번 커밋이 이루어져야 한다. 따라서 보통 루비를 이용해 이를 해결하는데 다음 포스트에서는 이에 대해 설명해 보겠다.</p>
+<p>위 깃을 클론하고 이를 자신이 만든 레포지터리에 커밋하면 테마가 적용된다. 여기서 config.yml을 수정해서 사이트를 설정해주면 되는데, 먼저 URL과 Author 부분을 설정해주도록 하자.</p>
+
+<p>현재 깃에서 직접 수정하고 반영하는 경우 블로그의 수정을 확인하려면 매번 커밋이 이루어져야 한다. 따라서 보통 수정한 후 루비를 이용해 로컬에서 확인하고 수정하는데, 다음 포스트에서는 이를 구름을 이용해 하는 것을 이야기 해 보겠다.</p>
 
         
       </section>
@@ -358,6 +360,16 @@
 
 
       
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">이전</a>
+    
+    
+      <a href="/git_blog/ARP-Spoofing-and-snort-rule/" class="pagination--pager" title="포스트 생성하기
+">다음</a>
+    
+  </nav>
+
     </div>
 
     
@@ -370,9 +382,30 @@
       <div class="grid__wrapper">
         
           
-            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/git_blog/ARP-Spoofing-and-snort-rule/" rel="permalink">포스트 생성하기
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
+  
   
 </div>
 
@@ -433,7 +466,7 @@
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
-      s.src = 'https://your-disqus-shortname.disqus.com/embed.js';
+      s.src = 'https://junesimtom-github-io.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();

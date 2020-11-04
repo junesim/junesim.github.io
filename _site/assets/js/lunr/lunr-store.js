@@ -4,4 +4,10 @@ var store = [{
         "tags": [],
         "url": "http://0.0.0.0:4000/git_blog/How-to-make-a-git-blog/",
         "teaser": null
+      },{
+        "title": "포스트 생성하기",
+        "excerpt":" ","categories": ["git_blog"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/git_blog/ARP-Spoofing-and-snort-rule/",
+        "teaser": null
       }]

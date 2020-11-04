@@ -5,6 +5,10 @@
 <lastmod>2020-11-02T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://0.0.0.0:4000/git_blog/ARP-Spoofing-and-snort-rule/</loc>
+<lastmod>2020-11-04T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0:4000/about/</loc>
 <lastmod>2020-11-02T00:00:00+00:00</lastmod>
 </url>
@@ -21,5 +25,9 @@
 <url>
 <loc>http://0.0.0.0:4000/sitemap/</loc>
 <lastmod>2020-11-02T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/google4e65be12b77c3b19.html</loc>
+<lastmod>2020-11-04T04:12:48+00:00</lastmod>
 </url>
 </urlset>
