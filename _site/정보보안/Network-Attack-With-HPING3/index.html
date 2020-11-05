@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>DDoS 공격 - hping3 - 개발새발</title>
-<meta name="description" content="LAND Attack">
+<!-- begin _includes/seo.html --><title>DoS 공격 - LAND ATTACK, DDoS - 개발새발</title>
+<meta name="description" content="hping3를 이용해 DoS 공격을 시도해보자.">
 
 
   <meta name="author" content="Joonsoo Park">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="DDoS 공격 - hping3">
+<meta property="og:title" content="DoS 공격 - LAND ATTACK, DDoS">
 <meta property="og:url" content="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/">
 
 
-  <meta property="og:description" content="LAND Attack">
+  <meta property="og:description" content="hping3를 이용해 DoS 공격을 시도해보자.">
 
 
 
@@ -138,6 +138,8 @@
               <a href="/sitemap/">Sitemap</a>
             </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
             </li><li class="masthead__menu-item">
               <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
             </li></ul>
@@ -276,15 +278,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DDoS 공격 - hping3">
-    <meta itemprop="description" content="LAND Attack">
+    <meta itemprop="headline" content="DoS 공격 - LAND ATTACK, DDoS">
+   <meta itemprop="description" content="hping3를 이용해 DoS 공격을 시도해보자.">
     <meta itemprop="datePublished" content="2020-11-05T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">DDoS 공격 - hping3
+          <h1 id="page-title" class="page__title" itemprop="headline">DoS 공격 - LAND ATTACK, DDoS
 </h1>
           
 
@@ -294,18 +296,29 @@
 
       <section class="page__content" itemprop="text">
         
-        <font color="#ffcc66">LAND Attack</font>
+        <p>hping3를 이용해 DoS 공격을 시도해보자.</p>
 
-<p>Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. IP Spoofing을 이용한 공격이다.</p>
+<font color="#ffcc66">DoS</font>
 
-<font color="#ffcc66">IP Spoofing</font>
-<p>IP Spoofing이란 자신의 ip를 변조해 자신이 만든 패킷을 다른 컴퓨터가 만든 패킷처럼 만드는 것이다.</p>
+<p>Denial of Service의 약자로 피해자에게 과도한 트래픽을 줘서 정상적인 처리를 하지 못하도록 하는 것이다. 다양한 종류가 있으나 여기선 LAND Attack과 DDoS에 대해 알아보자.</p>
 
-<p>hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood</p>
+<font color="#ffcc66">LAND Attack</font>
 
-<p>--flood : 좀 더 패킷을 빠르게 보내기 위해 사용하는 옵션</p>
+<p>Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. 자신의 IP를 변조해 공격을 하기 떄문에 이는 Ip Spoofing에 해당된다.</p>
 
-<p>Ping of Death</p>
+<p><code class="language-plaintext highlighter-rouge">hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood </code></p>
+
+<p><code class="language-plaintext highlighter-rouge">--flood</code> : 좀 더 패킷을 빠르게 보내기 위해 사용하는 옵션</p>
+
+<font color="#ffcc66">DDoS</font>
+
+<p>Distributed Denial of Service 분산 서비스 거부 공격을 의미한다. 여러대의 공격자가 피해자에게 부하를 줘서 서비스를 정상적으로 하지 못하게 만드는 공격이다.</p>
+
+<p>hping3의 rand 옵션을 사용해 source ip를 변조해 여러대의 PC에서 패킷을 전송한 것처럼 공격할 수 있다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">
+hping3 --rand-source --flood --icmp 192.168.8.131
+</code></p>
 
 
         
@@ -346,7 +359,7 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=DDoS+%EA%B3%B5%EA%B2%A9+-+hping3%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FNetwork-Attack-With-HPING3%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=DoS+%EA%B3%B5%EA%B2%A9+-+LAND+ATTACK%2C+DDoS%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FNetwork-Attack-With-HPING3%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FNetwork-Attack-With-HPING3%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -357,7 +370,7 @@
       
   <nav class="pagination">
     
-      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/" class="pagination--pager" title="ARP Spoofing - dnsniff
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/" class="pagination--pager" title="Spoofing
 ">이전</a>
     
     
@@ -385,14 +398,14 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/" rel="permalink">ARP Spoofing - dnsniff
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/" rel="permalink">Spoofing
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">ARP Spoofing
+    <p class="archive__item-excerpt" itemprop="description">Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.
 </p>
   </article>
 </div>

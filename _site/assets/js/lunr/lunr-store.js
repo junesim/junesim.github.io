@@ -5,14 +5,14 @@ var store = [{
         "url": "http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog/",
         "teaser": null
       },{
-        "title": "ARP Spoofing - dnsniff",
-        "excerpt":"ARP Spoofing dnsniff VMWARE 등의 가상 장비를 사용해서 arp -a : 현재 MAC 테이블 확인 route -n : 게이트웨이 주소 확인 arpspoof -i [인터페이스 이름] [target ip] [gateway ip] VMware를 사용해 실습할 경우 각 OS의 네트워크 인터페이스가 다를 수가 있다. kali는 eth0인데 서버는 ens33이라던지. 이 경우 /etc/default/grub 파일을 수정해 주면...","categories": ["정보보안"],
+        "title": "Spoofing",
+        "excerpt":"Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자. IP Spoofing IP Spoofing이란 자신의 ip를 변조해 자신이 만든 패킷을 다른 컴퓨터가 만든 패킷처럼 만드는 것이다. Fragroute 포트 포워딩을 해주는 도구. ARP Spoofing을 하게 되면 자신에게 패킷이 오게 되는데, 이후 다시 피해자가 지정한 곳에 피해자의 패킷을 보내주기 위해 사용한다. 만약 이를 사용하지 않으면...","categories": ["정보보안"],
         "tags": [],
-        "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/",
+        "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/",
         "teaser": null
       },{
-        "title": "DDoS 공격 - hping3",
-        "excerpt":"LAND Attack Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. IP Spoofing을 이용한 공격이다. IP Spoofing IP Spoofing이란 자신의 ip를 변조해 자신이 만든 패킷을 다른 컴퓨터가 만든 패킷처럼 만드는 것이다. hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood --flood : 좀 더 패킷을 빠르게 보내기 위해...","categories": ["정보보안"],
+        "title": "DoS 공격 - LAND ATTACK, DDoS",
+        "excerpt":"hping3를 이용해 DoS 공격을 시도해보자. DoS Denial of Service의 약자로 피해자에게 과도한 트래픽을 줘서 정상적인 처리를 하지 못하도록 하는 것이다. 다양한 종류가 있으나 여기선 LAND Attack과 DDoS에 대해 알아보자. LAND Attack Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. 자신의 IP를 변조해 공격을 하기 떄문에 이는...","categories": ["정보보안"],
         "tags": [],
         "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/",
         "teaser": null

