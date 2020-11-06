@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>DoS 공격 - LAND ATTACK, DDoS - 개발새발</title>
-<meta name="description" content="hping3를 이용해 DoS 공격을 시도해보자.">
+<meta name="description" content="  hping3를 이용해 DoS 공격을 시도해보자.">
 
 
   <meta name="author" content="Joonsoo Park">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/">
 
 
-  <meta property="og:description" content="hping3를 이용해 DoS 공격을 시도해보자.">
+  <meta property="og:description" content="  hping3를 이용해 DoS 공격을 시도해보자.">
 
 
 
@@ -135,13 +135,9 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/">Posts</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/">Sitemap</a>
-            </li><li class="masthead__menu-item">
               <a href="/about/">About</a>
             </li><li class="masthead__menu-item">
               <a href="/categories/">Categories</a>
-            </li><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -279,7 +275,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="DoS 공격 - LAND ATTACK, DDoS">
-   <meta itemprop="description" content="hping3를 이용해 DoS 공격을 시도해보자.">
+   <meta itemprop="description" content="  hping3를 이용해 DoS 공격을 시도해보자.">
     <meta itemprop="datePublished" content="2020-11-05T00:00:00+00:00">
     
 
@@ -296,29 +292,30 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>hping3를 이용해 DoS 공격을 시도해보자.</p>
+        <p>  hping3를 이용해 DoS 공격을 시도해보자.</p>
 
-<font color="#ffcc66">DoS</font>
+<h2>DoS</h2>
 
-<p>Denial of Service의 약자로 피해자에게 과도한 트래픽을 줘서 정상적인 처리를 하지 못하도록 하는 것이다. 다양한 종류가 있으나 여기선 LAND Attack과 DDoS에 대해 알아보자.</p>
+<p>  Denial of Service의 약자로 피해자에게 과도한 트래픽을 줘서 정상적인 처리를 하지 못하도록 하는 것이다. 다양한 종류가 있으나 여기선 <strong>LAND Attack</strong>과 <strong>DDoS</strong>에 대해 알아보자.</p>
 
-<font color="#ffcc66">LAND Attack</font>
+<h2>LAND Attack</h2>
 
-<p>Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. 자신의 IP를 변조해 공격을 하기 떄문에 이는 Ip Spoofing에 해당된다.</p>
+<p>  Land Attack이란 source ip(송신자의 ip)와 destination ip(수신자의 ip)를 같게 만들어 공격하는 방법이다. 자신의 IP를 변조해 공격을 하기 떄문에 이는 Ip Spoofing에 해당된다.</p>
 
-<p><code class="language-plaintext highlighter-rouge">hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood </code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hping3 -a [변조할 ip] [수신자의 ip] --icmp --flood
+</code></pre></div></div>
 
-<p><code class="language-plaintext highlighter-rouge">--flood</code> : 좀 더 패킷을 빠르게 보내기 위해 사용하는 옵션</p>
+<p><code class="language-plaintext highlighter-rouge">--flood</code>: 좀 더 패킷을 빠르게 보내기 위해 사용하는 옵션</p>
 
-<font color="#ffcc66">DDoS</font>
+<h2>DDoS</h2>
 
-<p>Distributed Denial of Service 분산 서비스 거부 공격을 의미한다. 여러대의 공격자가 피해자에게 부하를 줘서 서비스를 정상적으로 하지 못하게 만드는 공격이다.</p>
+<p>  Distributed Denial of Service 분산 서비스 거부 공격을 의미한다. 여러대의 공격자가 피해자에게 부하를 줘서 서비스를 정상적으로 하지 못하게 만드는 공격이다.</p>
 
-<p>hping3의 rand 옵션을 사용해 source ip를 변조해 여러대의 PC에서 패킷을 전송한 것처럼 공격할 수 있다.</p>
+<p>  hping3의 rand 옵션을 사용해 source ip를 변조해 여러대의 PC에서 패킷을 전송한 것처럼 공격할 수 있다.</p>
 
-<p><code class="language-plaintext highlighter-rouge">
-hping3 --rand-source --flood --icmp 192.168.8.131
-</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hping3 --rand-source --flood --icmp 192.168.8.131
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">--rand-source</code>: 발신 ip를 랜덤하게 변조해서 송신</p>
 
 
         
@@ -374,7 +371,8 @@ hping3 --rand-source --flood --icmp 192.168.8.131
 ">이전</a>
     
     
-      <a href="#" class="pagination--pager disabled">다음</a>
+      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/" class="pagination--pager" title="네트워크 통신 방식의 종류
+">다음</a>
     
   </nav>
 
@@ -398,6 +396,28 @@ hping3 --rand-source --flood --icmp 192.168.8.131
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/" rel="permalink">네트워크 통신 방식의 종류
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">  통신방식들에 대해 알아보자.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/" rel="permalink">Spoofing
 </a>
       
@@ -405,7 +425,7 @@ hping3 --rand-source --flood --icmp 192.168.8.131
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.
+    <p class="archive__item-excerpt" itemprop="description">  Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.
 </p>
   </article>
 </div>
@@ -427,7 +447,7 @@ hping3 --rand-source --flood --icmp 192.168.8.131
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">깃 블로그를 만들어보자.
+    <p class="archive__item-excerpt" itemprop="description">  깃 블로그를 만들어보자.
 </p>
   </article>
 </div>

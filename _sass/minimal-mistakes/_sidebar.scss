@@ -54,12 +54,17 @@
     font-family: $sans-serif-narrow;
   }
 
-  p,
   li {
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
   }
+
+  p{//Add this is for bio...
+	font-family: "Nanum Brush Script";
+	font-size: 1.2em;  
+  }
+	
 
   img {
     width: 100%;
@@ -176,6 +181,9 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
+}
+.sidebar .author__bio{
+  font-size: $type-size-5;
 }
 
 .author__urls-wrapper {
@@ -298,6 +306,7 @@
 
   li {
     white-space: nowrap;
+	
   }
 
   a {
@@ -307,9 +316,8 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: $type-size-4;
     text-decoration: none;
-
     &:hover {
       text-decoration: underline;
     }

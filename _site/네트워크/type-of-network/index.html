@@ -9,28 +9,32 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>개발새발</title>
-<meta name="description" content="Let’s share even a little things.">
+<!-- begin _includes/seo.html --><title>네트워크 통신 방식의 종류 - 개발새발</title>
+<meta name="description" content="  통신방식들에 대해 알아보자.">
 
 
   <meta name="author" content="Joonsoo Park">
   
+  <meta property="article:author" content="Joonsoo Park">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="개발새발">
-<meta property="og:url" content="http://0.0.0.0:4000/">
+<meta property="og:title" content="네트워크 통신 방식의 종류">
+<meta property="og:url" content="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/">
 
 
-  <meta property="og:description" content="Let’s share even a little things.">
-
-
-
+  <meta property="og:description" content="  통신방식들에 대해 알아보자.">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2020-11-06T00:00:00+00:00">
 
 
 
@@ -41,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0:4000/">
+<link rel="canonical" href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/">
 
 
 
@@ -103,7 +107,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -269,46 +273,114 @@
 
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="네트워크 통신 방식의 종류">
+   <meta itemprop="description" content="  통신방식들에 대해 알아보자.">
+    <meta itemprop="datePublished" content="2020-11-06T00:00:00+00:00">
     
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
 
-<h3 class="archive__subtitle">최근 포스트</h3>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">네트워크 통신 방식의 종류
+</h1>
+          
 
 
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>  통신방식들에 대해 알아보자.</p>
+
+<p>  통신 방식을 나누는 방법엔 다양한 방법이 있다. 크게 <strong>연결형(Connection)</strong>과 <strong>비연결형(Connectionless)</strong>으로 나눌 수 있다.</p>
+<h2>연결형(Connection)</h2>
+<p>  데이터 송신을 시작하기 전에 호스트 간의 회선을 논리적으로 연결한 후 통신을 시작한다. 연결의 확립과 끊기 과정이 필요하지만 신뢰성이 높다. 데이터의 순서가 중요할 경우 적합하다. 전화를 생각하면 이해가 편할듯 하다. 대표적인 프로토콜로는 <strong>TCP</strong>가 해당된다.</p>
+<h2>비연결형(Connectionless)</h2>
+<p>  비연결형의 경우 연결의 확립과 끊기 처리가 없다. 송신자는 수신자가 확인되지 않아도 데이터의 전송이 가능하다. 신뢰성이 높지는 않지만 프로토콜이 간단해 비용이 작다는 장점이 있다. <strong>데이터그램</strong>이라는 전송 단위로 전송된다. 대표적으로 <strong>UDP</strong>가 해당된다.</p>
+<h2>유니캐스트</h2>
+<p>  1대1 통신을 의미한다. 전화를 생각하면 편리하다. <strong>IPv4/IPv6</strong> 둘 다 지원하는 방식이다.</p>
+<h2>브로드캐스트</h2>
+<p>  1대의 호스트에서 연결된 모든 호스트에게 정보를 발신한다. 브로드캐스트가 통신할 수 있는 범위를 브로드캐스트 도메인이라고 한다. 멀티캐스트를 사용해 구현할 수 있다. <strong>IPv4</strong>에서만 지원하는 방식이다.</p>
+<h2>멀티캐스트</h2>
+<p>  브로드캐스트와 여러 개의 호스트와 통신을 하지만 <strong>특정 그룹</strong>으로 한정한다. 네트워크 장비가 이 기능을 제공해야만 사용이 가능하다. <strong>IPv4/IPv6</strong> 모두 지원한다.</p>
+<h2>애니캐스트</h2>
+<p>  멀티캐스트와 같이 특정 그룹의 호스트를 향해 정보를 발신하지만 여러 호스트 중 네트워크상에 최적의 조건을 가지고 있는 호스트를 선별하고 이후 통신이 진행된다. <strong>IPv6</strong>에서 지원된다.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
 
 
-<div class="entries-list">
   
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
     
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/" rel="permalink">네트워크 통신 방식의 종류
-</a>
       
-    </h2>
+      <a href="/categories/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="page__taxonomy-item" rel="tag">네트워크</a>
     
+    </span>
+  </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">  통신방식들에 대해 알아보자.
-</p>
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-06T00:00:00+00:00">November 6, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC+%ED%86%B5%EC%8B%A0+%EB%B0%A9%EC%8B%9D%EC%9D%98+%EC%A2%85%EB%A5%98%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2Ftype-of-network%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2Ftype-of-network%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2Ftype-of-network%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" class="pagination--pager" title="DoS 공격 - LAND ATTACK, DDoS
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
   </article>
-</div>
 
   
-    
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -325,12 +397,12 @@
   </article>
 </div>
 
-  
-    
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -347,12 +419,12 @@
   </article>
 </div>
 
-  
-    
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -369,14 +441,13 @@
   </article>
 </div>
 
+        
+      </div>
+    </div>
+  
   
 </div>
 
-
-
-
-  </div>
-</div>
     </div>
 
     
@@ -424,6 +495,25 @@
 
 
 
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://junesimtom-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
 
 
 

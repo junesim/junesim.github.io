@@ -84,9 +84,15 @@ body {
 }
 
 .page__content {
+  strong{
+	color: $user_mark_color;	
+	letter-spacing: 0.5px;
+	left: 0.5em;
+	}
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+	color: $user_mark_color;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -106,10 +112,12 @@ body {
 		}
 	}
 
-  p,
   li,
   dl {
     font-size: 1em;
+  }
+  p{
+	 font-size: 0.8em;
   }
 
   /* paragraph indents */
