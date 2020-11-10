@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>네트워크 통신 방식의 종류 - 개발새발</title>
-<meta name="description" content="  통신방식들에 대해 알아보자.">
+<!-- begin _includes/seo.html --><title>Server - 개발새발</title>
+<meta name="description" content="  서버란 무엇인가.">
 
 
   <meta name="author" content="Joonsoo Park">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="네트워크 통신 방식의 종류">
-<meta property="og:url" content="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/">
+<meta property="og:title" content="Server">
+<meta property="og:url" content="http://0.0.0.0:4000/ict/Server/">
 
 
-  <meta property="og:description" content="  통신방식들에 대해 알아보자.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-11-06T00:00:00+00:00">
+  <meta property="og:description" content="  서버란 무엇인가.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2020-11-09T00:00:00+00:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/">
+
+<link rel="canonical" href="http://0.0.0.0:4000/ict/Server/">
 
 
 
@@ -274,15 +274,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="네트워크 통신 방식의 종류">
-   <meta itemprop="description" content="  통신방식들에 대해 알아보자.">
-    <meta itemprop="datePublished" content="2020-11-06T00:00:00+00:00">
+    <meta itemprop="headline" content="Server">
+   <meta itemprop="description" content="  서버란 무엇인가.">
+    <meta itemprop="datePublished" content="2020-11-09T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">네트워크 통신 방식의 종류
+          <h1 id="page-title" class="page__title" itemprop="headline">Server
 </h1>
           
 
@@ -292,21 +292,19 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>  통신방식들에 대해 알아보자.</p>
+        <p>  서버란 무엇인가.</p>
 
-<p>  통신 방식을 나누는 방법엔 다양한 방법이 있다. 크게 <strong>연결형(Connection)</strong>과 <strong>비연결형(Connectionless)</strong>으로 나눌 수 있다.</p>
-<h2>연결형(Connection)</h2>
-<p>  데이터 송신을 시작하기 전에 호스트 간의 회선을 논리적으로 연결한 후 통신을 시작한다. 연결의 확립과 끊기 과정이 필요하지만 신뢰성이 높다. 데이터의 순서가 중요할 경우 적합하다. 전화를 생각하면 이해가 편할듯 하다. 대표적인 프로토콜로는 <strong>TCP</strong>가 해당된다.</p>
-<h2>비연결형(Connectionless)</h2>
-<p>  비연결형의 경우 연결의 확립과 끊기 처리가 없다. 송신자는 수신자가 확인되지 않아도 데이터의 전송이 가능하다. 신뢰성이 높지는 않지만 프로토콜이 간단해 비용이 작다는 장점이 있다. <strong>데이터그램</strong>이라는 전송 단위로 전송된다. 대표적으로 <strong>UDP</strong>가 해당된다.</p>
-<h2>유니캐스트</h2>
-<p>  1대1 통신을 의미한다. 전화를 생각하면 편리하다. <strong>IPv4/IPv6</strong> 둘 다 지원하는 방식이다.</p>
-<h2>브로드캐스트</h2>
-<p>  1대의 호스트에서 연결된 모든 호스트에게 정보를 발신한다. 브로드캐스트가 통신할 수 있는 범위를 브로드캐스트 도메인이라고 한다. 멀티캐스트를 사용해 구현할 수 있다. <strong>IPv4</strong>에서만 지원하는 방식이다.</p>
-<h2>멀티캐스트</h2>
-<p>  브로드캐스트와 여러 개의 호스트와 통신을 하지만 <strong>특정 그룹</strong>으로 한정한다. 네트워크 장비가 이 기능을 제공해야만 사용이 가능하다. <strong>IPv4/IPv6</strong> 모두 지원한다.</p>
-<h2>애니캐스트</h2>
-<p>  멀티캐스트와 같이 특정 그룹의 호스트를 향해 정보를 발신하지만 여러 호스트 중 네트워크상에 최적의 조건을 가지고 있는 호스트를 선별하고 이후 통신이 진행된다. <strong>IPv6</strong>에서 지원된다.</p>
+<p><strong>사용자들에게 자원을 제공해 주는 것.</strong></p>
+
+<h2>웹 서버</h2>
+<p>  기본 APM(Apache(웹 서버), PhP(프로그래밍 언어), MySql(데이터베이스,요즘엔 MariaDB) 이렇게 해서 APM이라고 불린다. 기본이지만 요즘에는 장고(Django) 나 다른 방법으로 구축할 수 있습니다. 요즘엔 Apache 대신 Tomcat을 사용합니다.</p>
+
+<p>  보통 웹 서버의 경우 리눅스를 이용해서 구축을 많이 하는데 리눅스의 대표적인 특징에는 <strong>쉘</strong>과 <strong>커널</strong>이 있다.</p>
+
+<h2>쉘</h2>
+<p>  쉘의 경우 사용자와 커널간의 인터페이스이다. 사용자가 명령어를 입력하는 bash 쉘이 대표적이다.</p>
+<h2>커널</h2>
+<p>  커널은 하드웨어의 동작 관리 및 소프트웨어와의 동작을 가능하게 해준다. 커널의 경우 OS의 핵심이라고 할만큼 중요하다. 커널에서 실행되는 프로그램에는 주의가 필요하며 보통 <strong>root</strong> 계정이 커널에 영향을 끼칠 수 가 있어 보안적으로 대비가 필요하다.</p>
 
         
       </section>
@@ -329,14 +327,14 @@
     
       
       
-      <a href="/categories/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="page__taxonomy-item" rel="tag">네트워크</a>
+      <a href="/categories/#ict" class="page__taxonomy-item" rel="tag">ICT</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-06T00:00:00+00:00">November 6, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-09T00:00:00+00:00">November 9, 2020</time></p>
 
 
       </footer>
@@ -346,22 +344,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC+%ED%86%B5%EC%8B%A0+%EB%B0%A9%EC%8B%9D%EC%9D%98+%EC%A2%85%EB%A5%98%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2Ftype-of-network%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Server%20http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FServer%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2Ftype-of-network%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FServer%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2Ftype-of-network%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FServer%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" class="pagination--pager" title="DoS 공격 - LAND ATTACK, DDoS
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" class="pagination--pager" title="관계대수와 관계해석
 ">이전</a>
     
     
-      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" class="pagination--pager" title="관계대수와 관계해석
+      <a href="/ict/WEB-WAS/" class="pagination--pager" title="WEB Server와 WAS의 차이
 ">다음</a>
     
   </nav>
@@ -408,14 +406,14 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/ict/Server/" rel="permalink">Server
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" rel="permalink">관계대수와 관계해석
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">  서버란 무엇인가.
+    <p class="archive__item-excerpt" itemprop="description">기능이 같지만 이름이 다른 관계대수와 관계해석에 대해 알아보자.
 </p>
   </article>
 </div>
@@ -430,14 +428,14 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" rel="permalink">관계대수와 관계해석
+        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/" rel="permalink">네트워크 통신 방식의 종류
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">기능이 같지만 이름이 다른 관계대수와 관계해석에 대해 알아보자.
+    <p class="archive__item-excerpt" itemprop="description">  통신방식들에 대해 알아보자.
 </p>
   </article>
 </div>
@@ -523,8 +521,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://0.0.0.0:4000/ict/Server/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/ict/Server"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
