@@ -52,4 +52,10 @@ var store = [{
         "tags": [],
         "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/",
         "teaser": null
+      },{
+        "title": "메일 프로토콜과 구성요소에 대해 알아보자",
+        "excerpt":"메일 프로토콜과 구성요소에 대해 알아보자. 메일 프로토콜 SMTP : Simple Mail Transfer Protocol 클라이언트에서 메일을 보내거나 메일 서버끼리 메일을 주고 받을 떄 사용하는 프로토콜 POP3, IMAP3 : 메일 서버에 있는 메일을 클라이언트로 가져오는 프로토콜 보낼 때는 SMTP 받을 때는 POP3, IMAP3 차이점 POP3의 경우 클라이언트가 서버의 메일을 가져오게 되면 서버의...","categories": ["네트워크"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/How-to-make-mail-server/",
+        "teaser": null
       }]

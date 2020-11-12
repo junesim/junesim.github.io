@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-11-12T04:53:40+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">DHCP</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/" rel="alternate" type="text/html" title="DHCP" /><published>2020-11-12T00:00:00+00:00</published><updated>2020-11-12T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/">&lt;p&gt;DHCP란 무엇인가&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-11-12T08:32:59+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">DHCP</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/" rel="alternate" type="text/html" title="DHCP" /><published>2020-11-12T00:00:00+00:00</published><updated>2020-11-12T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/">&lt;p&gt;DHCP란 무엇인가&lt;/p&gt;
 
 &lt;h2&gt;DHCP&lt;/h2&gt;
 
@@ -8,11 +8,75 @@
 
 &lt;h2&gt;서버의 동작 방식&lt;/h2&gt;
 
-&lt;p&gt;동적 할당 : 네트워크 관리자가 일정 범위의 IP 주소를 지정하고  클라이언트의 요청에 따라 IP를 할당해 준다. 임대 개념으로 이뤄지고 임대 기간이 지나면 IP를 회수하고 다시 할당하는 방식이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;동적 할당&lt;/strong&gt; : 네트워크 관리자가 일정 범위의 IP 주소를 지정하고  클라이언트의 요청에 따라 IP를 할당해 준다. 임대 개념으로 이뤄지고 임대 기간이 지나면 IP를 회수하고 다시 할당하는 방식이다.&lt;/p&gt;
 
-&lt;p&gt;자동 할당 : 동적할당과 유사하나 클라이언트에 할당된 IP가 영구적으로 적용된다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;자동 할당&lt;/strong&gt; : 동적할당과 유사하나 클라이언트에 할당된 IP가 영구적으로 적용된다.&lt;/p&gt;
 
-&lt;p&gt;수동 할당 : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">DHCP란 무엇인가</summary></entry><entry><title type="html">DNS</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" rel="alternate" type="text/html" title="DNS" /><published>2020-11-11T00:00:00+00:00</published><updated>2020-11-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">&lt;p&gt;DNS란 무엇인가&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;수동 할당&lt;/strong&gt; : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">DHCP란 무엇인가</summary></entry><entry><title type="html">메일 프로토콜과 구성요소에 대해 알아보자</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/How-to-make-mail-server/" rel="alternate" type="text/html" title="메일 프로토콜과 구성요소에 대해 알아보자" /><published>2020-11-12T00:00:00+00:00</published><updated>2020-11-12T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/How-to-make-mail-server</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/How-to-make-mail-server/">&lt;p&gt;메일 프로토콜과 구성요소에 대해 알아보자.&lt;/p&gt;
+
+&lt;h2&gt;메일 프로토콜&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;SMTP&lt;/strong&gt; : Simple Mail Transfer Protocol 클라이언트에서 메일을 보내거나 메일 서버끼리 메일을 주고 받을 떄 사용하는 프로토콜&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;POP3, IMAP3&lt;/strong&gt; : 메일 서버에 있는 메일을 클라이언트로 가져오는 프로토콜&lt;/p&gt;
+
+&lt;p&gt;보낼 때는 SMTP 받을 때는 POP3, IMAP3&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;차이점&lt;/strong&gt;
+POP3의 경우 클라이언트가 서버의 메일을 가져오게 되면 서버의 메일은 삭제된다. IMAP3의 경우 클라이언트가 가져간다 하더라도 서버의 메일은 유지된다. 서버가 메일을 감당하기 힘들 경우 POP3를 사용하게 되면 서버의 비용이 준다는 장점이 있다. 요즘은 보통 IMAP을 사용합니다.&lt;/p&gt;
+
+&lt;p&gt;구성 요소&lt;/p&gt;
+
+&lt;p&gt;MTA, MUA, MDA, MRA, 메일 큐&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MUA&lt;/strong&gt;: Mail User Agnet 자신이 속한 메일 서버에 전송해 줍니다. 메일을 다운로드하거나 MTA로 업로드. SMTP에 의해 접속하며 인증과정 필요.&lt;/p&gt;
+
+&lt;p&gt;ex) Thunderbird, Outlook, Evolution&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MTA&lt;/strong&gt;: Mail Transfer Agent. 다른 MTA나 메일 사용자에게 메일을 보내거나 받는 역할을 해줍니다.(RELAY 과정) 또한, 바이러스 및 스팸 메일과 같은 필터링 기능이 있다. 25포트를 사용하는 SMTP에 의해 이뤄진다.&lt;/p&gt;
+
+&lt;p&gt;ex) sendmail,Qmail,Postfix&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MDA&lt;/strong&gt;: Mail Delivery Agent 메일 서버간 메일을 송신해줍니다. MTA한테 메일을 받아 사용자의 메일서버에 저장 및 운반하는 역할. 메일 서버의 메일을 MUA가 읽어 로컬 PC에 다운로드 시 IMAP POP3&lt;/p&gt;
+
+&lt;p&gt;ex) Dovecot, Courier, Cyrus&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;메일 큐&lt;/strong&gt;: 전송량이 많아 메일이 전송되지 않을 경우 메일이 보내지지 않는 경우가 많았다고 한다. 그래서 메일 큐를 생성해 메일을 보내지 못할 경우 큐에 저장을 해놓고 전송이 가능할 때 메일을 보내주는 개념이다.&lt;/p&gt;
+
+&lt;!--
+
+dns mx(mailexchanger) 추가
+nslookup에서 지정한 도메인을 쳤을 경우 ip가 정확하면 성공.
+
+dns 설정을 자신이 설정한 ip로 설정해줘야합니다.
+sendmail-cf , dovecot 다운로드 
+이툴을 이용해서 할껀가봐
+/sendmail.cf
+85 localhost를 자신이 설정한 mail 도메인으로
+264 수정 루프백 아이피 제거
+
+/etc/mail/access에 지정한 도메인 추가
+
+restart 하고 makemap hash를 통해 재생성
+
+/etc/dovecot/conf.d/10-mail.conf
+25,116 : 주석제거
+121 : group mail 추가
+
+10-auth.conf
+10: no로 plaintext_auth를 가능하게
+
+10-ssl.conf
+8 :ssl yes
+
+user 추가
+
+sendmail, dovecot  재시작
+
+
+thunderbird 설치 후 자신에게 메일 보내보기
+
+thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 사용하지 않고 인증은 평문패스워드와 커버로스 --&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">메일 프로토콜과 구성요소에 대해 알아보자.</summary></entry><entry><title type="html">DNS</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" rel="alternate" type="text/html" title="DNS" /><published>2020-11-11T00:00:00+00:00</published><updated>2020-11-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">&lt;p&gt;DNS란 무엇인가&lt;/p&gt;
 
 &lt;h2&gt;DNS 서버&lt;/h2&gt;
 
