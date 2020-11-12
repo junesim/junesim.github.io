@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>WEB Server와 WAS의 차이 - 개발새발</title>
-<meta name="description" content="Web Server와 WAS에 대해 알아보자.">
+<!-- begin _includes/seo.html --><title>DNS - 개발새발</title>
+<meta name="description" content="DNS란 무엇인가">
 
 
   <meta name="author" content="Joonsoo Park">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="WEB Server와 WAS의 차이">
-<meta property="og:url" content="http://0.0.0.0:4000/ict/WEB-WAS/">
+<meta property="og:title" content="DNS">
+<meta property="og:url" content="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">
 
 
-  <meta property="og:description" content="Web Server와 WAS에 대해 알아보자.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-11-10T00:00:00+00:00">
+  <meta property="og:description" content="DNS란 무엇인가">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2020-11-11T00:00:00+00:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://0.0.0.0:4000/ict/WEB-WAS/">
+
+<link rel="canonical" href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">
 
 
 
@@ -274,15 +274,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="WEB Server와 WAS의 차이">
-   <meta itemprop="description" content="Web Server와 WAS에 대해 알아보자.">
-    <meta itemprop="datePublished" content="2020-11-10T00:00:00+00:00">
+    <meta itemprop="headline" content="DNS">
+   <meta itemprop="description" content="DNS란 무엇인가">
+    <meta itemprop="datePublished" content="2020-11-11T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">WEB Server와 WAS의 차이
+          <h1 id="page-title" class="page__title" itemprop="headline">DNS
 </h1>
           
 
@@ -292,28 +292,22 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><strong>Web Server</strong>와 <strong>WAS</strong>에 대해 알아보자.</p>
+        <p>DNS란 무엇인가</p>
 
-<h2>Web Server</h2>
-<p>웹 서비스를 할 수 있는 환경을 구축하기 위해 사용하는 소프트웨어를 의미한다. HTTP를 통해 클라이언트가 요청하는 HTML 문서 및 오브젝트를 전송해주는 서버를 의미한다. <strong>정적 콘텐츠</strong>를 제공해 주기 때문에 항상 같은 결과를 받을 수 있다.</p>
+<h2>DNS 서버</h2>
 
-<p>ex) Apache</p>
+<p>Domain Name Server의 약자.</p>
 
-<h2>WAS(Web Application Server)</h2>
-<p><strong>동적인 컨텐츠</strong>를 제공하기 위해 만들어진 Application Server를 의미한다. 전통적 웹 서버의 경우 서버에 작성된 html만을 제공했다면 WAS에서는 <strong>데이터베이스, 트랜잭션 관리, 업무 처리에 필요한 비즈니스 로직</strong>을 수행하는 등의 부가적인 기능들이 추가된다.</p>
+<p>모든 통신은 IP로 통신이 되는데 이를 사람이 기억하긴 힘드니 IP를 도메인으로 바꿔주는 역할을 한다. 기존에는 hosts 파일(호스트 파일)을 이용해 네트워크에 접속했는데 네트워크 상의 컴퓨터의 증가로 이를 일일히 개인이 기억하는 것은 비효율적.
+따라서 이를 전문적으로 해주는 DNS 서버를 생성해서 이용하게 된다.</p>
 
-<p>ex) Tomcat</p>
+<p>ex) PowerDNS,ndjbdns,knot,unbound,bind</p>
 
-<h2>왜 두개를 분리해서 사용하는가</h2>
+<p>도메인 입력 시 먼저 호스트 파일을 참조, 없으면 resolv.conf를 참조해 네임서버에 대한 정보를 얻고 네임 서버에 도메인을 질의 함.</p>
 
-<p><strong>WAS</strong>가 정적인 컨텐츠에 더불어 동적인 컨텐츠까지 제공할 수 있다면 WAS만 사용하면 되는데 왜 두 개를 분리해서 사용할까라는 의문이 들수가 있다. 서버의 성능 때문이라고 생각하는데 이는 오해이다. 이유로는 Apache Tomcat의 경우 5.5 부터는 Native Moudlue로 httpd를 처리하기 떄문에 성능면에서 전혀 차이가 없다고 한다. 하지만 보안성을 강화하고, 로드밸런싱 등의 이유로 분리해 사용하는 것이 좋다고 한다.</p>
-
-<p><strong>출처</strong>: <a href="https://sieunlim.tistory.com/17">개발노트</a>  <a>https://sieunlim.tistory.com/17</a></p>
-
-<hr />
-<p><strong>여담</strong></p>
-
-<p>Apache와 Tomcat 모두 Apache 사에서 개발 되어 보통 Apache, Apache Tomcat 등으로 혼용해서 불리지만 이 포스트에서는 WAS와 전통적 Web Server와의 비교를 하기 위해 Apache와 Tomcat으로 나누어 예시를 표했다.</p>
+<p>네임서버는 DNS 서버
+도메인 이름을 IP 주소로 변환시켜주는 역할
+=Name Resoulution</p>
 
         
       </section>
@@ -336,14 +330,14 @@
     
       
       
-      <a href="/categories/#ict" class="page__taxonomy-item" rel="tag">ICT</a>
+      <a href="/categories/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="page__taxonomy-item" rel="tag">네트워크</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-10T00:00:00+00:00">November 10, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-11T00:00:00+00:00">November 11, 2020</time></p>
 
 
       </footer>
@@ -353,22 +347,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=WEB+Server%EC%99%80+WAS%EC%9D%98+%EC%B0%A8%EC%9D%B4%20http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FWEB-WAS%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=DNS%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDNS%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FWEB-WAS%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDNS%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FWEB-WAS%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDNS%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/ict/Server/" class="pagination--pager" title="Server
+      <a href="/ict/WEB-WAS/" class="pagination--pager" title="WEB Server와 WAS의 차이
 ">이전</a>
     
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" class="pagination--pager" title="DNS
+      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/" class="pagination--pager" title="DHCP
 ">다음</a>
     
   </nav>
@@ -415,14 +409,14 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" rel="permalink">DNS
+        <a href="/ict/WEB-WAS/" rel="permalink">WEB Server와 WAS의 차이
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">DNS란 무엇인가
+    <p class="archive__item-excerpt" itemprop="description">Web Server와 WAS에 대해 알아보자.
 </p>
   </article>
 </div>
@@ -530,8 +524,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://0.0.0.0:4000/ict/WEB-WAS/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/ict/WEB-WAS"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

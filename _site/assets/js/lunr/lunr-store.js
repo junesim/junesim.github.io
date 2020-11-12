@@ -40,4 +40,16 @@ var store = [{
         "tags": [],
         "url": "http://0.0.0.0:4000/ict/WEB-WAS/",
         "teaser": null
+      },{
+        "title": "DNS",
+        "excerpt":"DNS란 무엇인가 DNS 서버 Domain Name Server의 약자. 모든 통신은 IP로 통신이 되는데 이를 사람이 기억하긴 힘드니 IP를 도메인으로 바꿔주는 역할을 한다. 기존에는 hosts 파일(호스트 파일)을 이용해 네트워크에 접속했는데 네트워크 상의 컴퓨터의 증가로 이를 일일히 개인이 기억하는 것은 비효율적. 따라서 이를 전문적으로 해주는 DNS 서버를 생성해서 이용하게 된다. ex) PowerDNS,ndjbdns,knot,unbound,bind...","categories": ["네트워크"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/",
+        "teaser": null
+      },{
+        "title": "DHCP",
+        "excerpt":"DHCP란 무엇인가 DHCP Dynamic Host Configuration Protocol의 약자 DHCP 서버가 하는 역할은 자신의 네트워크 안에 있는 클라이언트 컴퓨터가 부팅될 떄 자동으로 네트워크 설정(IP,서브넷 마스크, 게이트웨이 주소, DNS 서버 주소)을 할당해 주는 것이다. 서버의 동작 방식 동적 할당 : 네트워크 관리자가 일정 범위의 IP 주소를 지정하고 클라이언트의 요청에 따라 IP를 할당해...","categories": ["네트워크"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/",
+        "teaser": null
       }]
