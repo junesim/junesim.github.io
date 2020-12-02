@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T06:55:06+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">test</title><link href="http://0.0.0.0:4000/test/" rel="alternate" type="text/html" title="test" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/test</id><content type="html" xml:base="http://0.0.0.0:4000/test/"></content><author><name>Joonsoo Park</name></author><summary type="html"></summary></entry><entry><title type="html">GNS3 Firewall 실습</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/" rel="alternate" type="text/html" title="GNS3 Firewall 실습" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/">&lt;p&gt;GNS3에서 방화벽 Transparent 모드를 실습해 보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T08:45:42+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">test</title><link href="http://0.0.0.0:4000/test/" rel="alternate" type="text/html" title="test" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/test</id><content type="html" xml:base="http://0.0.0.0:4000/test/"></content><author><name>Joonsoo Park</name></author><summary type="html"></summary></entry><entry><title type="html">GNS3 Firewall 실습</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/" rel="alternate" type="text/html" title="GNS3 Firewall 실습" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/">&lt;p&gt;GNS3에서 방화벽 Transparent 모드를 실습해 보자.&lt;/p&gt;
 
 &lt;h2&gt;Transparent 모드&lt;/h2&gt;
 
@@ -98,23 +98,26 @@ FW1(config)# arp outside 10.1.12.2 [mac address]
 &lt;p&gt;ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;R1(config)# do show interface int fa0/0&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; R2(config)# int fa0/0 mac-address 1234.5678.0000
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;R2의 MAC 주소를 수정한 후 R1에서 핑을 날릴 경우 R1의 ARP 테이블이 변경되는 것을 알 수 있습니다.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; R1(config)# do ping 10.1.12.2
  R1(config)# show arp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/img/gns3TPFirewall/firewall_tp_fw3.png&quot; alt=&quot;fwimg4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/gns3TPFirewall/firewall_tp_r2.png&quot; alt=&quot;rimg1&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; FW1(config)arp-inspection inside enable
  FW1(config)arp-inspection outside enable no-flood
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;img src=&quot;/img/gns3TPFirewall/firewall_tp_fw4.png&quot; alt=&quot;fwimg4&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; R1# clear arp-cache
  R1# show arp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;show arp로 기존에 지정된 1234.5678.0000이 없어질 때까지 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear arp-cache&lt;/code&gt; 명령어를 반복해주자. 한번에 잘 안된다.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;R1# ping 10.1.12.2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;ping이 막힌 것을 볼 수 있다. 지정된 MAC 주소와 현재 R2의 MAC 주소가 달라서 기존에 전송되던 핑이 전송이 되지 않는다.
-전 포스트에서 ARP Spoofing에 대해&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">GNS3에서 방화벽 Transparent 모드를 실습해 보자.</summary></entry><entry><title type="html">IP Class들과 서브넷</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/" rel="alternate" type="text/html" title="IP Class들과 서브넷" /><published>2020-11-24T00:00:00+00:00</published><updated>2020-11-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/">&lt;p&gt;IP 클래스들에 대해 알아보자.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/gns3TPFirewall/firewall_tp_r3.png&quot; alt=&quot;rimg1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ARP-cache를 초기화 해준뒤 ping을 보내보면 ping이 막힌 것을 볼 수 있다. 지정된 MAC 주소와 현재 R2의 MAC 주소가 달라서 기존에 전송되던 핑이 전송이 되지 않는다. 방화벽에서 inside와 outside의 MAC 주소를 잡아주고 arp-inspection 명령어를 통해 패킷들을 검사하고 OUTSIDE에서 접근하는 패킷의 경우 검사를 통과하지 못하면 no-flood 즉, 통과 시키지 않는다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">GNS3에서 방화벽 Transparent 모드를 실습해 보자.</summary></entry><entry><title type="html">IP Class들과 서브넷</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/" rel="alternate" type="text/html" title="IP Class들과 서브넷" /><published>2020-11-24T00:00:00+00:00</published><updated>2020-11-24T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/">&lt;p&gt;IP 클래스들에 대해 알아보자.&lt;/p&gt;
 
 &lt;p&gt;IP의 경우 5개의 클래스로 이루어져있다. 그리고 클래스 별로 서브넷 마스크가 달라 이에 대한 숙지가 필요하다.&lt;/p&gt;
 

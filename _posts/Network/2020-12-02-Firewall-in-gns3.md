@@ -111,18 +111,19 @@ FW1(config)# arp outside 10.1.12.2 [mac address]
  ```
  R2(config)# int fa0/0 mac-address 1234.5678.0000
  ```
+  
  R2의 MAC 주소를 수정한 후 R1에서 핑을 날릴 경우 R1의 ARP 테이블이 변경되는 것을 알 수 있습니다. 
  ```
  R1(config)# do ping 10.1.12.2
  R1(config)# show arp
  ```
- ![fwimg4](/img/gns3TPFirewall/firewall_tp_fw3.png)
+![rimg1](/img/gns3TPFirewall/firewall_tp_r2.png)
  ```
  FW1(config)arp-inspection inside enable
  FW1(config)arp-inspection outside enable no-flood
  ```
  
- 
+ ![fwimg4](/img/gns3TPFirewall/firewall_tp_fw4.png)
  ```
  R1# clear arp-cache
  R1# show arp
@@ -131,5 +132,6 @@ FW1(config)# arp outside 10.1.12.2 [mac address]
 ```
 R1# ping 10.1.12.2
 ```
-ping이 막힌 것을 볼 수 있다. 지정된 MAC 주소와 현재 R2의 MAC 주소가 달라서 기존에 전송되던 핑이 전송이 되지 않는다.
-전 포스트에서 ARP Spoofing에 대해 
+![rimg1](/img/gns3TPFirewall/firewall_tp_r3.png)
+
+ ARP-cache를 초기화 해준뒤 ping을 보내보면 ping이 막힌 것을 볼 수 있다. 지정된 MAC 주소와 현재 R2의 MAC 주소가 달라서 기존에 전송되던 핑이 전송이 되지 않는다. 방화벽에서 inside와 outside의 MAC 주소를 잡아주고 arp-inspection 명령어를 통해 패킷들을 검사하고 OUTSIDE에서 접근하는 패킷의 경우 검사를 통과하지 못하면 no-flood 즉, 통과 시키지 않는다. 
