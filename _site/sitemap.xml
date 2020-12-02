@@ -25,7 +25,7 @@
 <lastmod>2020-11-09T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/ict/WEB-WAS/</loc>
+<loc>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/WEB-WAS/</loc>
 <lastmod>2020-11-10T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -49,8 +49,16 @@
 <lastmod>2020-11-16T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/CSRF/</loc>
-<lastmod>2020-11-23T00:00:00+00:00</lastmod>
+<loc>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/</loc>
+<lastmod>2020-11-24T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/test/</loc>
+<lastmod>2020-12-02T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/</loc>
+<lastmod>2020-12-02T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/about/</loc>

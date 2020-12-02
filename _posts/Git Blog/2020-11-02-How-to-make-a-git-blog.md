@@ -1,5 +1,5 @@
 ---
-layout: single
+
 title: How to make a git blog
 categories: [깃 블로그 만들기]
 

@@ -1,5 +1,5 @@
 ---
-layout: single
+type: posts
 title: 메일 프로토콜과 구성요소에 대해 알아보자
 categories: [네트워크]
 

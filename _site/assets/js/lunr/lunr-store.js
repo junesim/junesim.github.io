@@ -36,9 +36,9 @@ var store = [{
         "teaser": null
       },{
         "title": "WEB Server와 WAS의 차이",
-        "excerpt":"Web Server와 WAS에 대해 알아보자. Web Server 웹 서비스를 할 수 있는 환경을 구축하기 위해 사용하는 소프트웨어를 의미한다. HTTP를 통해 클라이언트가 요청하는 HTML 문서 및 오브젝트를 전송해주는 서버를 의미한다. 정적 콘텐츠를 제공해 주기 때문에 항상 같은 결과를 받을 수 있다. ex) Apache WAS(Web Application Server) 동적인 컨텐츠를 제공하기 위해 만들어진...","categories": ["ICT"],
+        "excerpt":"Web Server와 WAS에 대해 알아보자. Web Server 웹 서비스를 할 수 있는 환경을 구축하기 위해 사용하는 소프트웨어를 의미한다. HTTP를 통해 클라이언트가 요청하는 HTML 문서 및 오브젝트를 전송해주는 서버를 의미한다. 정적 콘텐츠를 제공해 주기 때문에 항상 같은 결과를 받을 수 있다. ex) Apache WAS(Web Application Server) 동적인 컨텐츠를 제공하기 위해 만들어진...","categories": ["네트워크"],
         "tags": [],
-        "url": "http://0.0.0.0:4000/ict/WEB-WAS/",
+        "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/WEB-WAS/",
         "teaser": null
       },{
         "title": "DNS",
@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "프로토콜에 따른 패킷의 헤더",
-        "excerpt":"프로토콜에 따라 패킷의 헤더는 달라진다. 이에 대해 알아보자   UDP 패킷 헤더  UDP 패킷 헤더는 64비트로 16비트의 4가지 필드로 구성되어 있다.      Source Port Number: 송신 포트 번호   Destination Port Number: 수신 포트 번호   UDP Length: 패킷의 길이   UDP Checksum: 패킷 전체의 Checksum, 이 필드가 0일 경우 수신측은 체크섬을 계산하지 않는다.  ","categories": ["네트워크"],
+        "excerpt":"프로토콜에 따른 패킷의 헤더들에 대해 알아보자.   UDP 패킷 헤더   UDP 패킷 헤더는 64비트로 16비트의 4가지 필드로 구성되어 있다.      Source Port Number: 송신 포트 번호   Destination Port Number: 수신 포트 번호   UDP Length: 패킷의 길이   UDP Checksum: 패킷 전체의 Checksum, 이 필드가 0일 경우 수신측은 체크섬을 계산하지 않는다.  ","categories": ["네트워크"],
         "tags": [],
         "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-UDP-Header/",
         "teaser": null
@@ -71,9 +71,21 @@ var store = [{
         "url": "http://0.0.0.0:4000/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python/",
         "teaser": null
       },{
-        "title": "다양한 웹 해킹",
-        "excerpt":"웹 해킹 기술 및 분류 XSS,CSRF,피싱, 파밍, SQL 인젝션, 웹 셸   정리해 기억해두자…. 웹 서버 공격이 주 목적이 아니래 파밍은 비슷한 도메인을 이용하는 것인가봐   ","categories": ["정보보안"],
+        "title": "IP Class들과 서브넷",
+        "excerpt":"IP 클래스들에 대해 알아보자. IP의 경우 5개의 클래스로 이루어져있다. 그리고 클래스 별로 서브넷 마스크가 달라 이에 대한 숙지가 필요하다. 공인 IP와 사설 IP 공인 IP란 전 세계에서 유일한 IP 주소로 ISP가 제공하는 IP 주소이다. 외부에 공개된 주소로 인터넷에 연결된 다른 PC로부터의 접근이 가능하다. 즉 외부 네트워크에 연결하기 위해 필요한 IP로...","categories": ["네트워크"],
         "tags": [],
-        "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/CSRF/",
+        "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/",
+        "teaser": null
+      },{
+        "title": "test",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/test/",
+        "teaser": null
+      },{
+        "title": "GNS3 Firewall 실습",
+        "excerpt":"GNS3에서 방화벽 Transparent 모드를 실습해 보자. Transparent 모드 방화벽을 2계층에서 동작 시킨다. 외부에서 봤을 때 홉수가 달라지지 않아 존재를 파악하기 힘들다. -&gt; 보안적으로 뛰어나다?! 기존 장비들의 IP 주소를 변경시킬 필요가 없다. 동일한 서브넷 상에서 이동하는 패킷을 검사하고 필터링할 수 있다. 2계층 트래픽 검사하고 원하지 않는 트래픽 필터링 가능 관리용 IP가...","categories": ["네트워크"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/",
         "teaser": null
       }]
