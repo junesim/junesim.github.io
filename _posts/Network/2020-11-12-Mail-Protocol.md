@@ -1,6 +1,6 @@
 ---
 type: posts
-title: 메일 프로토콜과 구성요소에 대해 알아보자
+title: 메일 프로토콜과 구성요소
 categories: [네트워크]
 
 ---
@@ -36,7 +36,7 @@ ex) Dovecot, Courier, Cyrus
 
 <strong>메일 큐</strong>: 전송량이 많아 메일이 전송되지 않을 경우 메일이 보내지지 않는 경우가 많았다고 한다. 그래서 메일 큐를 생성해 메일을 보내지 못할 경우 큐에 저장을 해놓고 전송이 가능할 때 메일을 보내주는 개념이다. 
 
-
+<strong>MRA</strong>: Mail Retrieval Agent 리모트 서버에 있는 우편함으로부터 사용자의 MUA로 메시지를 가져오는 프로그램.
 <!--
 
 dns mx(mailexchanger) 추가

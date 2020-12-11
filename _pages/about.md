@@ -26,6 +26,7 @@ last_modified_at: 2020-11-02
 - TOEIC SPEAKING Level 6 150
 - 정보처리기사
 - 정보보안기사 필기
+- 네트워크관리사 2급
 
 <h2>Skills</h2>
 

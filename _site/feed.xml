@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-12-02T08:45:42+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">test</title><link href="http://0.0.0.0:4000/test/" rel="alternate" type="text/html" title="test" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/test</id><content type="html" xml:base="http://0.0.0.0:4000/test/"></content><author><name>Joonsoo Park</name></author><summary type="html"></summary></entry><entry><title type="html">GNS3 Firewall 실습</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/" rel="alternate" type="text/html" title="GNS3 Firewall 실습" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/">&lt;p&gt;GNS3에서 방화벽 Transparent 모드를 실습해 보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-12-11T08:46:34+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">Snort Rule</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" rel="alternate" type="text/html" title="Snort Rule" /><published>2020-12-11T00:00:00+00:00</published><updated>2020-12-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/">&lt;p&gt;Snort에 대해 알아보자.&lt;/p&gt;
+
+&lt;h2 id=&quot;action&quot;&gt;Action&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;alert&lt;/li&gt;
+  &lt;li&gt;log&lt;/li&gt;
+  &lt;li&gt;pass&lt;/li&gt;
+  &lt;li&gt;drop&lt;/li&gt;
+  &lt;li&gt;reject&lt;/li&gt;
+  &lt;li&gt;sdrop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;tcp&lt;/li&gt;
+  &lt;li&gt;udp&lt;/li&gt;
+  &lt;li&gt;ip&lt;/li&gt;
+  &lt;li&gt;icmp&lt;/li&gt;
+  &lt;li&gt;any&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;방향지정&quot;&gt;방향지정&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;-&amp;gt;&lt;/li&gt;
+  &lt;li&gt;&amp;lt;-&lt;/li&gt;
+  &lt;li&gt;&amp;lt;&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;일반-옵션&quot;&gt;일반 옵션&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;msg&lt;/li&gt;
+  &lt;li&gt;sid&lt;/li&gt;
+  &lt;li&gt;rev&lt;/li&gt;
+  &lt;li&gt;priority&lt;/li&gt;
+  &lt;li&gt;classtype&lt;/li&gt;
+  &lt;li&gt;reference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;문법 Action Protocol SrcIP SrcPort -&amp;gt; DstIP DstProt option&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">Snort에 대해 알아보자.</summary></entry><entry><title type="html">SQL Injection</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="alternate" type="text/html" title="SQL Injection" /><published>2020-12-07T00:00:00+00:00</published><updated>2020-12-07T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/">&lt;p&gt;SQL Injection에 대해 알아보자.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SQL Injection&lt;/strong&gt;이란 공격자가 SQL 구문을 이용해 서버의 정보를 탈취하거나 인증을 우회하는 공격 기법이다.&lt;/p&gt;
+
+&lt;p&gt;SQL Injection에 많이 사용되는 함수들을 알아보자. 밑에 있는 함수들은 주로 MySQL에서 사용되는 함수들이다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;user&quot;&gt;USER&lt;/h2&gt;
+    &lt;p&gt;&lt;strong&gt;사용자&lt;/strong&gt;와 &lt;strong&gt;호스트&lt;/strong&gt;를 출력해주는 함수이다. 함수의 형태는 &lt;strong&gt;user()&lt;/strong&gt;이고, select user()로 쿼리를 이용해 현재 사용자와 호스트를 출력할 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;version&quot;&gt;VERSION&lt;/h2&gt;
+    &lt;p&gt;현재 &lt;strong&gt;데이터베이스의 버전&lt;/strong&gt;을 출력해주는 함수이다. 함수의 형태는 &lt;strong&gt;version()&lt;/strong&gt;이고, select version()로 쿼리를 실행해 현재 데이터베이스의 버전을 확인할 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;group_concat&quot;&gt;GROUP_CONCAT&lt;/h2&gt;
+    &lt;p&gt;&lt;strong&gt;UNION SELECT&lt;/strong&gt;를 이용할 경우 확인할 수 있는 컬럼 수가 제한되는 경우가 많다. 예를 들어 계정 전체를 출력하고 싶은데 출력되는 로우가 하나일 경우 계정 하나 밖에 추출하지 못한다. 이 경우 사용하는 함수가 &lt;strong&gt;group_concat()&lt;/strong&gt;이다. SELECT group_concat(name) from users로 쿼리를 돌릴 경우 usres의 name들이 하나의 컬럼으로 합쳐져서 출력된다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">SQL Injection에 대해 알아보자.</summary></entry><entry><title type="html">GNS3 Firewall 실습</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/" rel="alternate" type="text/html" title="GNS3 Firewall 실습" /><published>2020-12-02T00:00:00+00:00</published><updated>2020-12-02T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/">&lt;p&gt;GNS3에서 방화벽 Transparent 모드를 실습해 보자.&lt;/p&gt;
 
 &lt;h2&gt;Transparent 모드&lt;/h2&gt;
 
@@ -128,13 +189,16 @@ FW1(config)# arp outside 10.1.12.2 [mac address]
 
 &lt;h2&gt;A 클래스&lt;/h2&gt;
 &lt;p&gt;0.0.0.0 ~ 127.255.255.255
-주로 대규모 네트워크에 사용된다. 처음 8비트만이 네트워크 ID에 해당되고 나머지 비트는 호스트 ID에 해당되며 서브넷 마스크는 255.0.0.0&lt;/p&gt;
+주로 대규모 네트워크에 사용된다. 처음 8비트만이 네트워크 ID에 해당되고 나머지 비트는 호스트 ID에 해당되며 서브넷 마스크는 255.0.0.0
+사설 IP의 경우 10.0.0.0 ~ 10.255.255.255&lt;/p&gt;
 &lt;h2&gt;B 클래스&lt;/h2&gt;
 &lt;p&gt;128.0.0.0 ~ 191.255.255.255
-네트워크 ID는 처음 16비트에 해당되며 서브넷 마스크는 255.255.0.0&lt;/p&gt;
+네트워크 ID는 처음 16비트에 해당되며 서브넷 마스크는 255.255.0.0
+사설 IP의 경우 172.16.0.0 ~ 172.31.255.255&lt;/p&gt;
 &lt;h2&gt;C 클래스&lt;/h2&gt;
 &lt;p&gt;192.0.0.0 ~ 223.255.255.255
-네트워크 ID는 24비트가 해당되고 서브넷 마스크는 255.255.255.0&lt;/p&gt;
+네트워크 ID는 24비트가 해당되고 서브넷 마스크는 255.255.255.0
+사설 IP의 경우 192.168.0.0 ~ 192.168.255.255&lt;/p&gt;
 &lt;h2&gt;D 클래스&lt;/h2&gt;
 &lt;p&gt;224.0.0.0 ~ 239.255.255.255
 멀티캐스트 주소로 예약되어 있고 IP 할당에 이용되지 않는다.&lt;/p&gt;
@@ -175,7 +239,7 @@ IANA에서 사용을 허가하지 않은 IP 대역.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;자동 할당&lt;/strong&gt; : 동적할당과 유사하나 클라이언트에 할당된 IP가 영구적으로 적용된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;수동 할당&lt;/strong&gt; : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">DHCP란 무엇인가</summary></entry><entry><title type="html">메일 프로토콜과 구성요소에 대해 알아보자</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/" rel="alternate" type="text/html" title="메일 프로토콜과 구성요소에 대해 알아보자" /><published>2020-11-12T00:00:00+00:00</published><updated>2020-11-12T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/">&lt;p&gt;메일 프로토콜과 구성요소에 대해 알아보자.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;수동 할당&lt;/strong&gt; : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">DHCP란 무엇인가</summary></entry><entry><title type="html">메일 프로토콜과 구성요소</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/" rel="alternate" type="text/html" title="메일 프로토콜과 구성요소" /><published>2020-11-12T00:00:00+00:00</published><updated>2020-11-12T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/">&lt;p&gt;메일 프로토콜과 구성요소에 대해 알아보자.&lt;/p&gt;
 
 &lt;h2&gt;메일 프로토콜&lt;/h2&gt;
 
@@ -206,40 +270,40 @@ POP3의 경우 클라이언트가 서버의 메일을 가져오게 되면 서버
 
 &lt;p&gt;&lt;strong&gt;메일 큐&lt;/strong&gt;: 전송량이 많아 메일이 전송되지 않을 경우 메일이 보내지지 않는 경우가 많았다고 한다. 그래서 메일 큐를 생성해 메일을 보내지 못할 경우 큐에 저장을 해놓고 전송이 가능할 때 메일을 보내주는 개념이다.&lt;/p&gt;
 
-&lt;!--
+&lt;p&gt;&lt;strong&gt;MRA&lt;/strong&gt;: Mail Retrieval Agent 리모트 서버에 있는 우편함으로부터 사용자의 MUA로 메시지를 가져오는 프로그램.
+&amp;lt;!–&lt;/p&gt;
 
-dns mx(mailexchanger) 추가
-nslookup에서 지정한 도메인을 쳤을 경우 ip가 정확하면 성공.
+&lt;p&gt;dns mx(mailexchanger) 추가
+nslookup에서 지정한 도메인을 쳤을 경우 ip가 정확하면 성공.&lt;/p&gt;
 
-dns 설정을 자신이 설정한 ip로 설정해줘야합니다.
+&lt;p&gt;dns 설정을 자신이 설정한 ip로 설정해줘야합니다.
 sendmail-cf , dovecot 다운로드 
 이툴을 이용해서 할껀가봐
 /sendmail.cf
 85 localhost를 자신이 설정한 mail 도메인으로
-264 수정 루프백 아이피 제거
+264 수정 루프백 아이피 제거&lt;/p&gt;
 
-/etc/mail/access에 지정한 도메인 추가
+&lt;p&gt;/etc/mail/access에 지정한 도메인 추가&lt;/p&gt;
 
-restart 하고 makemap hash를 통해 재생성
+&lt;p&gt;restart 하고 makemap hash를 통해 재생성&lt;/p&gt;
 
-/etc/dovecot/conf.d/10-mail.conf
+&lt;p&gt;/etc/dovecot/conf.d/10-mail.conf
 25,116 : 주석제거
-121 : group mail 추가
+121 : group mail 추가&lt;/p&gt;
 
-10-auth.conf
-10: no로 plaintext_auth를 가능하게
+&lt;p&gt;10-auth.conf
+10: no로 plaintext_auth를 가능하게&lt;/p&gt;
 
-10-ssl.conf
-8 :ssl yes
+&lt;p&gt;10-ssl.conf
+8 :ssl yes&lt;/p&gt;
 
-user 추가
+&lt;p&gt;user 추가&lt;/p&gt;
 
-sendmail, dovecot  재시작
+&lt;p&gt;sendmail, dovecot  재시작&lt;/p&gt;
 
+&lt;p&gt;thunderbird 설치 후 자신에게 메일 보내보기&lt;/p&gt;
 
-thunderbird 설치 후 자신에게 메일 보내보기
-
-thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 사용하지 않고 인증은 평문패스워드와 커버로스 --&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">메일 프로토콜과 구성요소에 대해 알아보자.</summary></entry><entry><title type="html">DNS</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" rel="alternate" type="text/html" title="DNS" /><published>2020-11-11T00:00:00+00:00</published><updated>2020-11-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">&lt;p&gt;DNS란 무엇인가&lt;/p&gt;
+&lt;p&gt;thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 사용하지 않고 인증은 평문패스워드와 커버로스 –&amp;gt;&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">메일 프로토콜과 구성요소에 대해 알아보자.</summary></entry><entry><title type="html">DNS</title><link href="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" rel="alternate" type="text/html" title="DNS" /><published>2020-11-11T00:00:00+00:00</published><updated>2020-11-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">&lt;p&gt;DNS란 무엇인가&lt;/p&gt;
 
 &lt;h2&gt;DNS 서버&lt;/h2&gt;
 
@@ -275,10 +339,4 @@ thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;여담&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Apache와 Tomcat 모두 Apache 사에서 개발 되어 보통 Apache, Apache Tomcat 등으로 혼용해서 불리지만 이 포스트에서는 WAS와 전통적 Web Server와의 비교를 하기 위해 Apache와 Tomcat으로 나누어 예시를 표했다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">Web Server와 WAS에 대해 알아보자.</summary></entry><entry><title type="html">관계대수와 관계해석</title><link href="http://0.0.0.0:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" rel="alternate" type="text/html" title="관계대수와 관계해석" /><published>2020-11-09T00:00:00+00:00</published><updated>2020-11-09T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database</id><content type="html" xml:base="http://0.0.0.0:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/">&lt;p&gt;기능이 같지만 이름이 다른 &lt;strong&gt;관계대수&lt;/strong&gt;와 &lt;strong&gt;관계해석&lt;/strong&gt;에 대해 알아보자.&lt;/p&gt;
-
-&lt;h2&gt;관계대수&lt;/h2&gt;
-&lt;p&gt;  관계대수란 R-DB(Relational Database)에서 원하는 정보와 그 정보를 검색하기 위해 &lt;strong&gt;어떻게&lt;/strong&gt; 검색할 것인지를 기술하는 &lt;strong&gt;절차적인 언어&lt;/strong&gt;이다. 순수관계연산자, 일반 집합연산자가 해당된다. 릴레이션을 처리하기 위한 연산의 집합으로 피연산자와 결과가 모두 릴례이션이다.&lt;/p&gt;
-
-&lt;h2&gt;관계해석&lt;/h2&gt;
-&lt;p&gt;  관계해석이란 &lt;strong&gt;비절차적인 언어로&lt;/strong&gt;원하는 정보가 &lt;strong&gt;무엇&lt;/strong&gt;이라는 것만 정의하고 이를 통해 검색하는 것을 의미한다. 튜플 관계 해석과 도메인 관계 해석이 해당된다. 프레디킷 해석에 기반을 두고, 릴레이션을 정의하는 방법을 제공한다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="데이터베이스" /><summary type="html">기능이 같지만 이름이 다른 관계대수와 관계해석에 대해 알아보자.</summary></entry></feed>
+&lt;p&gt;Apache와 Tomcat 모두 Apache 사에서 개발 되어 보통 Apache, Apache Tomcat 등으로 혼용해서 불리지만 이 포스트에서는 WAS와 전통적 Web Server와의 비교를 하기 위해 Apache와 Tomcat으로 나누어 예시를 표했다.&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="네트워크" /><summary type="html">Web Server와 WAS에 대해 알아보자.</summary></entry></feed>

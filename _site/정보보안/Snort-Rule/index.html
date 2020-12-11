@@ -9,28 +9,32 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>개발새발 - 페이지 3</title>
-<meta name="description" content="Let’s share even a little things.">
+<!-- begin _includes/seo.html --><title>Snort Rule - 개발새발</title>
+<meta name="description" content="Snort에 대해 알아보자.">
 
 
   <meta name="author" content="Joonsoo Park">
   
+  <meta property="article:author" content="Joonsoo Park">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="개발새발">
-<meta property="og:url" content="http://0.0.0.0:4000/page3/">
+<meta property="og:title" content="Snort Rule">
+<meta property="og:url" content="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/">
 
 
-  <meta property="og:description" content="Let’s share even a little things.">
-
-
-
+  <meta property="og:description" content="Snort에 대해 알아보자.">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2020-12-11T00:00:00+00:00">
 
 
 
@@ -41,10 +45,8 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0:4000/page3/">
+<link rel="canonical" href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/">
 
-
-  <link rel="prev" href="http://0.0.0.0:4000/page2/">
 
 
 
@@ -105,7 +107,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -271,181 +273,231 @@
 
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
-
-<h3 class="archive__subtitle">최근 포스트</h3>
-
-
-
-
-<div class="entries-list">
-  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Snort Rule">
+   <meta itemprop="description" content="Snort에 대해 알아보자.">
+    <meta itemprop="datePublished" content="2020-12-11T00:00:00+00:00">
     
 
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <div class="page__inner-wrap">
       
-        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" rel="permalink">관계대수와 관계해석
-</a>
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Snort Rule
+</h1>
+          
+
+
+        </header>
       
-    </h2>
-    
 
+      <section class="page__content" itemprop="text">
+        
+        <p>Snort에 대해 알아보자.</p>
 
-    <p class="archive__item-excerpt" itemprop="description">기능이 같지만 이름이 다른 관계대수와 관계해석에 대해 알아보자.
-</p>
-  </article>
-</div>
+<h2 id="action">Action</h2>
 
-  
-    
+<ul>
+  <li>alert</li>
+  <li>log</li>
+  <li>pass</li>
+  <li>drop</li>
+  <li>reject</li>
+  <li>sdrop</li>
+</ul>
 
+<h2 id="protocol">Protocol</h2>
 
+<ul>
+  <li>tcp</li>
+  <li>udp</li>
+  <li>ip</li>
+  <li>icmp</li>
+  <li>any</li>
+</ul>
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/type-of-network/" rel="permalink">네트워크 통신 방식의 종류
-</a>
-      
-    </h2>
-    
+<h2 id="방향지정">방향지정</h2>
 
+<ul>
+  <li>-&gt;</li>
+  <li>&lt;-</li>
+  <li>&lt;&gt;</li>
+</ul>
 
-    <p class="archive__item-excerpt" itemprop="description">  통신방식들에 대해 알아보자.
-</p>
-  </article>
-</div>
+<h2 id="일반-옵션">일반 옵션</h2>
 
-  
-    
+<ul>
+  <li>msg</li>
+  <li>sid</li>
+  <li>rev</li>
+  <li>priority</li>
+  <li>classtype</li>
+  <li>reference</li>
+</ul>
 
+<p>문법 Action Protocol SrcIP SrcPort -&gt; DstIP DstProt option</p>
 
+        
+      </section>
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Network-Attack-With-HPING3/" rel="permalink">DoS 공격 - LAND ATTACK, DDoS
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">  hping3를 이용해 DoS 공격을 시도해보자.
-</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Spoofing/" rel="permalink">Spoofing
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">  Kali와 CentOS에서 ARP Spoofing과 DNS Spoofing을 실습해보자.
-</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EA%B9%83%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0/How-to-make-a-git-blog/" rel="permalink">How to make a git blog
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">  깃 블로그를 만들어보자.
-</p>
-  </article>
-</div>
-
-  
-</div>
-
-
-<nav class="pagination">
-  
-  <ul>
-    
-    
-      
-        <li><a href="/page2/">이전</a></li>
-      
-    
-
-    
-    
-      <li><a href="/">1</a></li>
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
+      <footer class="page__meta">
         
         
-        
-        <li><a href="/page2/">2</a></li>
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
       
+      
+      <a href="/categories/#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88" class="page__taxonomy-item" rel="tag">정보보안</a>
     
-
-    
-    
-
-    
-      <li><a href="#" class="disabled current">3</a></li>
-    
-
-    
-    
-      <li><a href="#" class="disabled"><span aria-hidden="true">다음</span></a></li>
-    
-  </ul>
-</nav>
+    </span>
+  </p>
 
 
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-12-11T00:00:00+00:00">December 11, 2020</time></p>
 
-  </div>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Snort+Rule%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FSnort-Rule%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FSnort-Rule%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2F%25EC%25A0%2595%25EB%25B3%25B4%25EB%25B3%25B4%25EC%2595%2588%2FSnort-Rule%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" class="pagination--pager" title="SQL Injection
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">참고</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="permalink">SQL Injection
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">SQL Injection에 대해 알아보자.
+</p>
+  </article>
 </div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/" rel="permalink">GNS3 Firewall 실습
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">GNS3에서 방화벽 Transparent 모드를 실습해 보자.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/" rel="permalink">IP Class들과 서브넷
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">IP 클래스들에 대해 알아보자.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python/" rel="permalink">파이썬
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">파이썬에 대해 알아보자.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
     </div>
 
     
@@ -493,6 +545,25 @@
 
 
 
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://junesimtom-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
 
 
 

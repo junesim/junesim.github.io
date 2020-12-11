@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>메일 프로토콜과 구성요소에 대해 알아보자 - 개발새발</title>
+<!-- begin _includes/seo.html --><title>메일 프로토콜과 구성요소 - 개발새발</title>
 <meta name="description" content="메일 프로토콜과 구성요소에 대해 알아보자.">
 
 
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="메일 프로토콜과 구성요소에 대해 알아보자">
+<meta property="og:title" content="메일 프로토콜과 구성요소">
 <meta property="og:url" content="http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/">
 
 
@@ -274,7 +274,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="메일 프로토콜과 구성요소에 대해 알아보자">
+    <meta itemprop="headline" content="메일 프로토콜과 구성요소">
    <meta itemprop="description" content="메일 프로토콜과 구성요소에 대해 알아보자.">
     <meta itemprop="datePublished" content="2020-11-12T00:00:00+00:00">
     
@@ -282,7 +282,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">메일 프로토콜과 구성요소에 대해 알아보자
+          <h1 id="page-title" class="page__title" itemprop="headline">메일 프로토콜과 구성요소
 </h1>
           
 
@@ -323,40 +323,40 @@ POP3의 경우 클라이언트가 서버의 메일을 가져오게 되면 서버
 
 <p><strong>메일 큐</strong>: 전송량이 많아 메일이 전송되지 않을 경우 메일이 보내지지 않는 경우가 많았다고 한다. 그래서 메일 큐를 생성해 메일을 보내지 못할 경우 큐에 저장을 해놓고 전송이 가능할 때 메일을 보내주는 개념이다.</p>
 
-<!--
+<p><strong>MRA</strong>: Mail Retrieval Agent 리모트 서버에 있는 우편함으로부터 사용자의 MUA로 메시지를 가져오는 프로그램.
+&lt;!–</p>
 
-dns mx(mailexchanger) 추가
-nslookup에서 지정한 도메인을 쳤을 경우 ip가 정확하면 성공.
+<p>dns mx(mailexchanger) 추가
+nslookup에서 지정한 도메인을 쳤을 경우 ip가 정확하면 성공.</p>
 
-dns 설정을 자신이 설정한 ip로 설정해줘야합니다.
+<p>dns 설정을 자신이 설정한 ip로 설정해줘야합니다.
 sendmail-cf , dovecot 다운로드 
 이툴을 이용해서 할껀가봐
 /sendmail.cf
 85 localhost를 자신이 설정한 mail 도메인으로
-264 수정 루프백 아이피 제거
+264 수정 루프백 아이피 제거</p>
 
-/etc/mail/access에 지정한 도메인 추가
+<p>/etc/mail/access에 지정한 도메인 추가</p>
 
-restart 하고 makemap hash를 통해 재생성
+<p>restart 하고 makemap hash를 통해 재생성</p>
 
-/etc/dovecot/conf.d/10-mail.conf
+<p>/etc/dovecot/conf.d/10-mail.conf
 25,116 : 주석제거
-121 : group mail 추가
+121 : group mail 추가</p>
 
-10-auth.conf
-10: no로 plaintext_auth를 가능하게
+<p>10-auth.conf
+10: no로 plaintext_auth를 가능하게</p>
 
-10-ssl.conf
-8 :ssl yes
+<p>10-ssl.conf
+8 :ssl yes</p>
 
-user 추가
+<p>user 추가</p>
 
-sendmail, dovecot  재시작
+<p>sendmail, dovecot  재시작</p>
 
+<p>thunderbird 설치 후 자신에게 메일 보내보기</p>
 
-thunderbird 설치 후 자신에게 메일 보내보기
-
-thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 사용하지 않고 인증은 평문패스워드와 커버로스 -->
+<p>thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 사용하지 않고 인증은 평문패스워드와 커버로스 –&gt;</p>
 
         
       </section>
@@ -396,7 +396,7 @@ thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%EB%A9%94%EC%9D%BC+%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EA%B3%BC+%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C%EC%97%90+%EB%8C%80%ED%95%B4+%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FMail-Protocol%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%EB%A9%94%EC%9D%BC+%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EA%B3%BC+%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C%20http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FMail-Protocol%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FMail-Protocol%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -436,6 +436,50 @@ thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" rel="permalink">Snort Rule
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Snort에 대해 알아보자.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="permalink">SQL Injection
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">SQL Injection에 대해 알아보자.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/" rel="permalink">GNS3 Firewall 실습
 </a>
       
@@ -458,28 +502,6 @@ thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/test/" rel="permalink">test
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
         <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/" rel="permalink">IP Class들과 서브넷
 </a>
       
@@ -488,28 +510,6 @@ thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 
 
 
     <p class="archive__item-excerpt" itemprop="description">IP 클래스들에 대해 알아보자.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python/" rel="permalink">파이썬
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">파이썬에 대해 알아보자.
 </p>
   </article>
 </div>

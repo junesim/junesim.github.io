@@ -53,7 +53,7 @@ var store = [{
         "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/",
         "teaser": null
       },{
-        "title": "메일 프로토콜과 구성요소에 대해 알아보자",
+        "title": "메일 프로토콜과 구성요소",
         "excerpt":"메일 프로토콜과 구성요소에 대해 알아보자. 메일 프로토콜 SMTP : Simple Mail Transfer Protocol 클라이언트에서 메일을 보내거나 메일 서버끼리 메일을 주고 받을 떄 사용하는 프로토콜 POP3, IMAP3 : 메일 서버에 있는 메일을 클라이언트로 가져오는 프로토콜 보낼 때는 SMTP 받을 때는 POP3, IMAP3 차이점 POP3의 경우 클라이언트가 서버의 메일을 가져오게 되면 서버의...","categories": ["네트워크"],
         "tags": [],
         "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/",
@@ -77,15 +77,21 @@ var store = [{
         "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/",
         "teaser": null
       },{
-        "title": "test",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "http://0.0.0.0:4000/test/",
-        "teaser": null
-      },{
         "title": "GNS3 Firewall 실습",
         "excerpt":"GNS3에서 방화벽 Transparent 모드를 실습해 보자. Transparent 모드 방화벽을 2계층에서 동작 시킨다. 외부에서 봤을 때 홉수가 달라지지 않아 존재를 파악하기 힘들다. -&gt; 보안적으로 뛰어나다?! 기존 장비들의 IP 주소를 변경시킬 필요가 없다. 동일한 서브넷 상에서 이동하는 패킷을 검사하고 필터링할 수 있다. 2계층 트래픽 검사하고 원하지 않는 트래픽 필터링 가능 관리용 IP가...","categories": ["네트워크"],
         "tags": [],
         "url": "http://0.0.0.0:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Firewall-in-gns3/",
+        "teaser": null
+      },{
+        "title": "SQL Injection",
+        "excerpt":"SQL Injection에 대해 알아보자. SQL Injection이란 공격자가 SQL 구문을 이용해 서버의 정보를 탈취하거나 인증을 우회하는 공격 기법이다. SQL Injection에 많이 사용되는 함수들을 알아보자. 밑에 있는 함수들은 주로 MySQL에서 사용되는 함수들이다. USER 사용자와 호스트를 출력해주는 함수이다. 함수의 형태는 user()이고, select user()로 쿼리를 이용해 현재 사용자와 호스트를 출력할 수 있다. VERSION 현재...","categories": ["정보보안"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/",
+        "teaser": null
+      },{
+        "title": "Snort Rule",
+        "excerpt":"Snort에 대해 알아보자.   Action      alert   log   pass   drop   reject   sdrop   Protocol      tcp   udp   ip   icmp   any   방향지정      -&gt;   &lt;-   &lt;&gt;   일반 옵션      msg   sid   rev   priority   classtype   reference   문법 Action Protocol SrcIP SrcPort -&gt; DstIP DstProt option  ","categories": ["정보보안"],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/",
         "teaser": null
       }]
