@@ -88,10 +88,4 @@ var store = [{
         "tags": [],
         "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/",
         "teaser": null
-      },{
-        "title": null,
-        "excerpt":" ","categories": [],
-        "tags": null,
-        "url": "http://0.0.0.0:4000/2021-02-09-Basic-of-Windows/",
-        "teaser": null
       }]
