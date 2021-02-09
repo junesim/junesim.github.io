@@ -1,46 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-12-11T08:46:34+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html">Snort Rule</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" rel="alternate" type="text/html" title="Snort Rule" /><published>2020-12-11T00:00:00+00:00</published><updated>2020-12-11T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/">&lt;p&gt;Snort에 대해 알아보자.&lt;/p&gt;
-
-&lt;h2 id=&quot;action&quot;&gt;Action&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;alert&lt;/li&gt;
-  &lt;li&gt;log&lt;/li&gt;
-  &lt;li&gt;pass&lt;/li&gt;
-  &lt;li&gt;drop&lt;/li&gt;
-  &lt;li&gt;reject&lt;/li&gt;
-  &lt;li&gt;sdrop&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;tcp&lt;/li&gt;
-  &lt;li&gt;udp&lt;/li&gt;
-  &lt;li&gt;ip&lt;/li&gt;
-  &lt;li&gt;icmp&lt;/li&gt;
-  &lt;li&gt;any&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;방향지정&quot;&gt;방향지정&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;-&amp;gt;&lt;/li&gt;
-  &lt;li&gt;&amp;lt;-&lt;/li&gt;
-  &lt;li&gt;&amp;lt;&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;일반-옵션&quot;&gt;일반 옵션&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;msg&lt;/li&gt;
-  &lt;li&gt;sid&lt;/li&gt;
-  &lt;li&gt;rev&lt;/li&gt;
-  &lt;li&gt;priority&lt;/li&gt;
-  &lt;li&gt;classtype&lt;/li&gt;
-  &lt;li&gt;reference&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;문법 Action Protocol SrcIP SrcPort -&amp;gt; DstIP DstProt option&lt;/p&gt;</content><author><name>Joonsoo Park</name></author><category term="정보보안" /><summary type="html">Snort에 대해 알아보자.</summary></entry><entry><title type="html">SQL Injection</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="alternate" type="text/html" title="SQL Injection" /><published>2020-12-07T00:00:00+00:00</published><updated>2020-12-07T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/">&lt;p&gt;SQL Injection에 대해 알아보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2021-02-09T13:35:27+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">개발새발</title><subtitle>Let's share even a little things.</subtitle><author><name>Joonsoo Park</name></author><entry><title type="html"></title><link href="http://0.0.0.0:4000/2021-02-09-Basic-of-Windows/" rel="alternate" type="text/html" title="" /><published>2021-02-09T13:35:27+00:00</published><updated>2021-02-09T13:35:27+00:00</updated><id>http://0.0.0.0:4000/2021-02-09-Basic-of-Windows</id><content type="html" xml:base="http://0.0.0.0:4000/2021-02-09-Basic-of-Windows/"></content><author><name>Joonsoo Park</name></author></entry><entry><title type="html">SQL Injection</title><link href="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="alternate" type="text/html" title="SQL Injection" /><published>2020-12-07T00:00:00+00:00</published><updated>2020-12-07T00:00:00+00:00</updated><id>http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection</id><content type="html" xml:base="http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/">&lt;p&gt;SQL Injection에 대해 알아보자.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;SQL Injection&lt;/strong&gt;이란 공격자가 SQL 구문을 이용해 서버의 정보를 탈취하거나 인증을 우회하는 공격 기법이다.&lt;/p&gt;
 

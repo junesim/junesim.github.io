@@ -2,6 +2,7 @@
 
 title: Snort Rule
 categories: [정보보안]
+published: false
 
 ---
 Snort에 대해 알아보자.

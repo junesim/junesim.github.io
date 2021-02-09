@@ -89,9 +89,9 @@ var store = [{
         "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/",
         "teaser": null
       },{
-        "title": "Snort Rule",
-        "excerpt":"Snort에 대해 알아보자.   Action      alert   log   pass   drop   reject   sdrop   Protocol      tcp   udp   ip   icmp   any   방향지정      -&gt;   &lt;-   &lt;&gt;   일반 옵션      msg   sid   rev   priority   classtype   reference   문법 Action Protocol SrcIP SrcPort -&gt; DstIP DstProt option  ","categories": ["정보보안"],
-        "tags": [],
-        "url": "http://0.0.0.0:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/",
+        "title": null,
+        "excerpt":" ","categories": [],
+        "tags": null,
+        "url": "http://0.0.0.0:4000/2021-02-09-Basic-of-Windows/",
         "teaser": null
       }]
