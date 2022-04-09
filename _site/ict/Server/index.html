@@ -10,12 +10,12 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Server - 개발새발</title>
-<meta name="description" content="  서버란 무엇인가.">
+<meta name="description" content="서버란 무엇인가.">
 
 
-  <meta name="author" content="Joonsoo Park">
+  <meta name="author" content="박준수">
   
-  <meta property="article:author" content="Joonsoo Park">
+  <meta property="article:author" content="박준수">
   
 
 
@@ -23,29 +23,29 @@
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
 <meta property="og:title" content="Server">
-<meta property="og:url" content="http://0.0.0.0:4000/ict/Server/">
+<meta property="og:url" content="http://localhost:4000/ict/Server/">
 
 
-  <meta property="og:description" content="  서버란 무엇인가.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-11-09T00:00:00+00:00">
+  <meta property="og:description" content="서버란 무엇인가.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-04-09T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://0.0.0.0:4000/ict/Server/">
+
+<link rel="canonical" href="http://localhost:4000/ict/Server/">
 
 
 
@@ -55,8 +55,8 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "Joonsoo Park",
-      "url": "http://0.0.0.0:4000/"
+      "name": "박준수",
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -169,14 +169,14 @@
   
     <div class="author__avatar">
       
-        <img src="/img/profile.jpg" alt="Joonsoo Park" itemprop="image">
+        <img src="/img/profile.jpg" alt="박준수" itemprop="image">
       
     </div>
   
 
   <div class="author__content">
     
-      <h3 class="author__name" itemprop="name">Joonsoo Park</h3>
+      <h3 class="author__name" itemprop="name">박준수</h3>
     
     
       <div class="author__bio" itemprop="description">
@@ -277,8 +277,8 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Server">
-   <meta itemprop="description" content="  서버란 무엇인가.">
-    <meta itemprop="datePublished" content="2020-11-09T00:00:00+00:00">
+   <meta itemprop="description" content="서버란 무엇인가.">
+    <meta itemprop="datePublished" content="2022-04-09T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
@@ -294,19 +294,51 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>  서버란 무엇인가.</p>
+        <p>서버란 무엇인가.</p>
 
-<p><strong>사용자들에게 자원을 제공해 주는 것.</strong></p>
+<p><strong>사용자들에게 서비스를 제공해 주는 것.</strong></p>
 
-<h2>웹 서버</h2>
-<p>  기본 APM(Apache(웹 서버), PhP(프로그래밍 언어), MySql(데이터베이스,요즘엔 MariaDB) 이렇게 해서 APM이라고 불린다. 기본이지만 요즘에는 장고(Django) 나 다른 방법으로 구축할 수 있습니다. 요즘엔 Apache 대신 Tomcat을 사용합니다.</p>
+<p><strong>사용자(Client)</strong>들의 요구에 따라서 필요한 서비스를 제공해주는 장비다.</p>
 
-<p>  보통 웹 서버의 경우 리눅스를 이용해서 구축을 많이 하는데 리눅스의 대표적인 특징에는 <strong>쉘</strong>과 <strong>커널</strong>이 있다.</p>
+<blockquote>
+  <p>어원은 <strong>특정 역할에 특화 된 것</strong>을 의미한다고 한다.</p>
+</blockquote>
 
+<p>용도에 따라서 구조가 나눠지는데 크게 <strong>클라이언트-서버 구조</strong>와 <strong>3-tier 구조</strong>로 나눌수 있다.</p>
+
+<h2 id="클라이언트-서버-구조">클라이언트-서버 구조</h2>
+
+<p>사용자(Client)가 <strong>특정 프로그램(Client Program)</strong>을 설치하고 이를 이용해 서버에 접속 해 서버가 제공하는 서비스를 이용한다.</p>
+
+<p>해당 서비스에 기능이 추가되거나 보완이 되는 경우 클라이언트 업데이트가
+  필요한 경우도 있다.</p>
+
+<p>이용자가 클라이언트를 업데이트 해야 되는 불편함이 감수되고, 사용자가
+ 업데이트를 안하고 서비스를 사용한다면 시스템적으로 취약점이 될 수도 있다.</p>
+
+<h2 id="3-tier-구조">3-Tier 구조</h2>
+
+<p>웹 서비스에서 많이 사용 되는 구조로 <strong>프레젠테이션, 애플리케이션, 데이터</strong> 계층으로 이루어져 있다.</p>
+
+<ol>
+  <li>
+    <p>프레젠테이션 계층</p>
+
+    <p>사용자의 입력을 받고 결과를 표시한다. 웹 서비스에서는 웹 화면을 띄워주는 웹 서버가 해당된다.</p>
+  </li>
+</ol>
+
+<!--<h2>웹 서버</h2>
+&nbsp;기본 APM(Apache(웹 서버), PhP(프로그래밍 언어), MySql(데이터베이스,요즘엔 MariaDB) 이렇게 해서 APM이라고 불린다. 기본이지만 요즘에는 장고(Django) 나 다른 방법으로 구축할 수 있습니다. 요즘엔 Apache 대신 Tomcat을 사용합니다.
+ 
+&nbsp;보통 웹 서버의 경우 리눅스를 이용해서 구축을 많이 하는데 리눅스의 대표적인 특징에는 <strong>쉘</strong>과 <strong>커널</strong>이 있다.
+
+<h2>WAS 서버</h2>
 <h2>쉘</h2>
-<p>  쉘의 경우 사용자와 커널간의 인터페이스이다. 사용자가 명령어를 입력하는 bash 쉘이 대표적이다.</p>
+&nbsp;쉘의 경우 사용자와 커널간의 인터페이스이다. 사용자가 명령어를 입력하는 bash 쉘이 대표적이다.
 <h2>커널</h2>
-<p>  커널은 하드웨어의 동작 관리 및 소프트웨어와의 동작을 가능하게 해준다. 커널의 경우 OS의 핵심이라고 할만큼 중요하다. 커널에서 실행되는 프로그램에는 주의가 필요하며 보통 <strong>root</strong> 계정이 커널에 영향을 끼칠 수 가 있어 보안적으로 대비가 필요하다.</p>
+&nbsp;커널은 하드웨어의 동작 관리 및 소프트웨어와의 동작을 가능하게 해준다. 커널의 경우 OS의 핵심이라고 할만큼 중요하다. 커널에서 실행되는 프로그램에는 주의가 필요하며 보통 <strong>root</strong> 계정이 커널에 영향을 끼칠 수 가 있어 보안적으로 대비가 필요하다. 
+-->
 
         
       </section>
@@ -336,7 +368,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-09T00:00:00+00:00">November 9, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2022-04-09T00:00:00+09:00">April 9, 2022</time></p>
 
 
       </footer>
@@ -346,23 +378,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Server%20http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FServer%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Server%20http%3A%2F%2Flocalhost%3A4000%2Fict%2FServer%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FServer%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fict%2FServer%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fict%2FServer%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fict%2FServer%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/Database/" class="pagination--pager" title="관계대수와 관계해석
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" class="pagination--pager" title="SQL Injection
 ">이전</a>
     
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/WEB-WAS/" class="pagination--pager" title="WEB Server와 WAS의 차이
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -506,7 +537,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 Joonsoo Park. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 박준수. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -523,7 +554,7 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://0.0.0.0:4000/ict/Server/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.url = "http://localhost:4000/ict/Server/";  /* Replace PAGE_URL with your page's canonical URL variable */
       this.page.identifier = "/ict/Server"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */

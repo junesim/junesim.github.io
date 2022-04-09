@@ -19,7 +19,7 @@ locale                   : "ko" #"en-US"
 title                    : "개발새발"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Joonsoo Park"
+name                     : "박준수"
 description              : "Let's share even a little things."
 url                      : "https://junesim.github.io" 
 #"https://junesim.github.io" 
@@ -96,7 +96,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Joonsoo Park"
+  name             : "박준수" 
   avatar           : "/img/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Share the even a little things."
   location         : "Seoul, South Korea"
