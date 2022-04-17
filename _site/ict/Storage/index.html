@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>DHCP - 개발새발</title>
-<meta name="description" content="DHCP란 무엇인가">
+<!-- begin _includes/seo.html --><title>Storage - 개발새발</title>
+<meta name="description" content="스토리지란 무엇인가.">
 
 
   <meta name="author" content="박준수">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="DHCP">
-<meta property="og:url" content="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/">
+<meta property="og:title" content="Storage">
+<meta property="og:url" content="http://localhost:4000/ict/Storage/">
 
 
-  <meta property="og:description" content="DHCP란 무엇인가">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-11-12T00:00:00+09:00">
+  <meta property="og:description" content="스토리지란 무엇인가.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-04-17T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/">
+
+<link rel="canonical" href="http://localhost:4000/ict/Storage/">
 
 
 
@@ -276,15 +276,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DHCP">
-   <meta itemprop="description" content="DHCP란 무엇인가">
-    <meta itemprop="datePublished" content="2020-11-12T00:00:00+09:00">
+    <meta itemprop="headline" content="Storage">
+   <meta itemprop="description" content="스토리지란 무엇인가.">
+    <meta itemprop="datePublished" content="2022-04-17T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">DHCP
+          <h1 id="page-title" class="page__title" itemprop="headline">Storage
 </h1>
           
 
@@ -294,21 +294,37 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>DHCP란 무엇인가</p>
+        <p>스토리지란 무엇인가.</p>
 
-<h2>DHCP</h2>
+<p>스토리지란 직역하자면 <strong>저장 장치</strong>이다. 우리가 사용하는 PC의 경우 PC에 디스크가 있고 해당 위치에 OS, DATA를 저장하고 이를 사용한다.</p>
 
-<p><strong>Dynamic Host Configuration Protocol</strong>의 약자</p>
+<p>하지만 DB나 다중 사용자 환경을 지원하는 서버의 경우 가지고 있는 슬롯만으로는 확장성에 한계가 있다. 성능 및 경제적인 문제로 서버는 Compute 용도로만 사용하고 스토리지의 경우 외부 장치를 이용하는 것이 일반적이다.</p>
 
-<p>DHCP 서버가 하는 역할은 자신의 네트워크 안에 있는 클라이언트 컴퓨터가 부팅될 떄 자동으로 네트워크 설정(IP,서브넷 마스크, 게이트웨이 주소, DNS 서버 주소)을 할당해 주는 것이다.</p>
+<p><strong>HCI 및 Composoable</strong> 등 현재 아키텍처에서는 이를 같이 두는 경우도 있다.</p>
 
-<h2>서버의 동작 방식</h2>
+<p>스토리지는 다양한 방식으로 나눌 수 있는데 인터페이스(연결방식)에 따라 <strong>DAS, SAN, NAS</strong> 방식으로 나눠진다.</p>
 
-<p><strong>동적 할당</strong> : 네트워크 관리자가 일정 범위의 IP 주소를 지정하고  클라이언트의 요청에 따라 IP를 할당해 준다. 임대 개념으로 이뤄지고 임대 기간이 지나면 IP를 회수하고 다시 할당하는 방식이다.</p>
+<h2 id="dasdirect-attached-storage">DAS(Direct Attached Storage)</h2>
 
-<p><strong>자동 할당</strong> : 동적할당과 유사하나 클라이언트에 할당된 IP가 영구적으로 적용된다.</p>
+<p>스토리지 시스템을 <strong>직접(Direct)</strong>로 서버에 붙이는 방식이다. 통상적으로 PC에서 이용하는 외장하드 및 내장하드를 생각하면 이해가 쉽다. 네트워크를 이용하지 않고 IO를 이용해 직접 붙이는 방식이기 때문에 확장성에 한계가 있다.</p>
 
-<p><strong>수동 할당</strong> : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.</p>
+<h2 id="sanstorage-area-network">SAN(Storage Area Network)</h2>
+
+<p>서버와 호스트간의 <strong>전용 네트워크</strong>를 구성해 이를 연결한다. 기존 네트워크는 NIC를 이용해 구성하는 반면에 SAN은 <strong>HBA</strong> 카드를 이용해 구성한다. 인터페이스 속도도 네트워크의 경우 1G, 10G, 25G, 50G 등으로 구성되는 반면에 HBA의 경우 8G, 16G, 32G 등으로 구성된다.
+ 일반적인 IP Protocol이 아닌 <strong>SCSI Protocol</strong>을 이용하며, <strong>Block</strong> 단위의 IO로 블록 스토리지라고도 한다.</p>
+
+<p><strong>SAN 스위치</strong>를 이용해 서버와 스토리지간 연결한다. SAN 스위치의 경우 <strong>Zoning 구성</strong>을 통해 1:1, 1:N 등 다양한 방식으로 Maaping 가능해 확장성이 높다. 현재 데이터센터에서 사용되는 전통적인 연결방식이다.</p>
+
+<p>블록 스토리지의 경우 정형 데이터를 보관하기가 좋아 DB서버와 많이 사용된다.</p>
+
+<h2 id="nasnetwork-attached-storage">NAS(Network Attached Storage)</h2>
+
+<p><strong>Network</strong>를 이용해 서버와 스토리지를 연결한다. NIC 카드를 이용해 구성되어 서비스 망에 같이 이용할 수도 있고, 사설망으로 따로 구성할 수도 있다.
+ <strong>DAS 및 SAN 스토리지의 경우 파일시스템을 서버가 가지고 있으나, NAS의 경우 파일 시스템을 NAS가 가지고 있어 공유하기가 쉽다.</strong> 
+ 전통적인 스토리지의 경우 파일 공유가 필요할 경우 스토리지 장비에서 지원하거나 솔루션을 구입해 사용해야 하지만 NAS의 경우에는 추가적인 솔루션이나 기능이 필요가 없다.
+ <strong>FILE I/O</strong> 방식으로 파일 스토리지라고도 불린다. 현재애는 <strong>오브젝트 스토리지</strong>라는 새로운 방식의 스토리지도 등장하며 계속해서 발전하고 있다.</p>
+
+<p>Object 스토리지의 경우 비정형 데이터를 보관하기가 좋아 빅데이터 등의 신기술이 사용되는 도메인에 많이 사용된다고 한다.</p>
 
         
       </section>
@@ -316,6 +332,37 @@
       <footer class="page__meta">
         
         
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#das" class="page__taxonomy-item" rel="tag">DAS</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#nas" class="page__taxonomy-item" rel="tag">NAS</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#san" class="page__taxonomy-item" rel="tag">SAN</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#storage" class="page__taxonomy-item" rel="tag">Storage</a>
+    
+    </span>
+  </p>
+
+
 
 
   
@@ -331,14 +378,14 @@
     
       
       
-      <a href="/categories/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="page__taxonomy-item" rel="tag">네트워크</a>
+      <a href="/categories/#ict" class="page__taxonomy-item" rel="tag">ICT</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-12T00:00:00+09:00">November 12, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2022-04-17T00:00:00+09:00">April 17, 2022</time></p>
 
 
       </footer>
@@ -348,23 +395,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=DHCP%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDHCP%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Storage%20http%3A%2F%2Flocalhost%3A4000%2Fict%2FStorage%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDHCP%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fict%2FStorage%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDHCP%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fict%2FStorage%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" class="pagination--pager" title="DNS
+      <a href="/ict/Server/" class="pagination--pager" title="Server
 ">이전</a>
     
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/" class="pagination--pager" title="메일 프로토콜과 구성요소
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -378,28 +424,6 @@
     <div class="page__related">
       <h4 class="page__related-title">참고</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ict/Storage/" rel="permalink">Storage
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">스토리지란 무엇인가.
-</p>
-  </article>
-</div>
-
         
           
 
@@ -467,6 +491,28 @@
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" rel="permalink">Snort Rule
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Snort에 대해 알아보자.
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
   
@@ -525,8 +571,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/ict/Storage/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/ict/Storage"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

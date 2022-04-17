@@ -12,6 +12,8 @@ last_modified_at: 2020-11-02
 
 <h2>Experience</h2>
 
+- 2021.06   ~현재        한전KDN  
+- 2021.01.01~2021.05.31 DKtechin 인프라엔지니어
 - 2020.09.14~2021.02.26 정보보안전문가양성-모의해킹
 - 2020.01.20~2020.01.24 [IHE NA Connectathon 2020](https://www.iheusa.org/ihe-na-connectathon-2020)
 - 2019.09.01~2020.01.30 연세대학교 원주캠퍼스 방사선학과 과제 개발.

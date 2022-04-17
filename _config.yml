@@ -20,7 +20,7 @@ title                    : "개발새발"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박준수"
-description              : "Let's share even a little things."
+description              : "A friend who shares is a friend who cares."
 url                      : "https://junesim.github.io" 
 #"https://junesim.github.io" 
 #"https://junesim-github-io.run.goorm.io"
@@ -98,7 +98,7 @@ analytics:
 author:
   name             : "박준수" 
   avatar           : "/img/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Share the even a little things."
+  bio              : "A friend who shares is a friend who cares."
   location         : "Seoul, South Korea"
   links:
     #- label: "Email"

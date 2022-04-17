@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>DHCP - 개발새발</title>
-<meta name="description" content="DHCP란 무엇인가">
+<!-- begin _includes/seo.html --><title>CSMA/CD - 개발새발</title>
+<meta name="description" content="CSMA/CD 방식에 대해 알아보자.">
 
 
   <meta name="author" content="박준수">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="DHCP">
-<meta property="og:url" content="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/">
+<meta property="og:title" content="CSMA/CD">
+<meta property="og:url" content="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/">
 
 
-  <meta property="og:description" content="DHCP란 무엇인가">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-11-12T00:00:00+09:00">
+  <meta property="og:description" content="CSMA/CD 방식에 대해 알아보자.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2020-12-29T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/">
+
+<link rel="canonical" href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/">
 
 
 
@@ -276,15 +276,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DHCP">
-   <meta itemprop="description" content="DHCP란 무엇인가">
-    <meta itemprop="datePublished" content="2020-11-12T00:00:00+09:00">
+    <meta itemprop="headline" content="CSMA/CD">
+   <meta itemprop="description" content="CSMA/CD 방식에 대해 알아보자.">
+    <meta itemprop="datePublished" content="2020-12-29T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">DHCP
+          <h1 id="page-title" class="page__title" itemprop="headline">CSMA/CD
 </h1>
           
 
@@ -294,21 +294,12 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>DHCP란 무엇인가</p>
+        <p>CSMA/CD 방식에 대해 알아보자.</p>
 
-<h2>DHCP</h2>
-
-<p><strong>Dynamic Host Configuration Protocol</strong>의 약자</p>
-
-<p>DHCP 서버가 하는 역할은 자신의 네트워크 안에 있는 클라이언트 컴퓨터가 부팅될 떄 자동으로 네트워크 설정(IP,서브넷 마스크, 게이트웨이 주소, DNS 서버 주소)을 할당해 주는 것이다.</p>
-
-<h2>서버의 동작 방식</h2>
-
-<p><strong>동적 할당</strong> : 네트워크 관리자가 일정 범위의 IP 주소를 지정하고  클라이언트의 요청에 따라 IP를 할당해 준다. 임대 개념으로 이뤄지고 임대 기간이 지나면 IP를 회수하고 다시 할당하는 방식이다.</p>
-
-<p><strong>자동 할당</strong> : 동적할당과 유사하나 클라이언트에 할당된 IP가 영구적으로 적용된다.</p>
-
-<p><strong>수동 할당</strong> : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.</p>
+<h2 id="csmacd">CSMA/CD</h2>
+<p><strong>Carrier Sense Multiple Access/Collision Detection</strong>의 약자다.
+<strong>Ethernet(이더넷)</strong> 방식의 프로토콜로 통신을 할 때 네트워크상에 통신이 일어나고 있는지를 확인한다. 이를 <strong>Carrier Sense</strong>라고 한다. <strong>Carrier</strong>란 네트워크 상에 나타나는 신호를 의미한다. 네트워크 상에 Carrier가 탐지될 경우 통신이 완료되기까지 기다린다. 네트워크 상에 통신이 일어나지 않을 때, 두 대 이상의 PC 및 서버가 통신을 하고자 데이터를 전송했을 경우 이를 <strong>Multiple Access</strong>라고 한다.
+Multiple Access 상황에서는 <strong>Collision(충돌)</strong>이 발생할 수 있다. 따라서 데이터를 전송했을 때 Ethernet의 경우에는 충동이 일어났는지를 확인해야 한다. 이를 <strong>Collision Detection(충돌 감지)</strong>라고 한다. 충돌이 발생했을 경우 각 PC는 랜덤한 시간을 대기한 후 재전송을 하게 되는데 충돌이 지속될 경우에는 통신이 불가능해질 수 있다.</p>
 
         
       </section>
@@ -338,7 +329,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-12T00:00:00+09:00">November 12, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-12-29T00:00:00+09:00">December 29, 2020</time></p>
 
 
       </footer>
@@ -348,22 +339,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=DHCP%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDHCP%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=CSMA%2FCD%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FNetwork-01%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDHCP%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FNetwork-01%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDHCP%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FNetwork-01%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/" class="pagination--pager" title="DNS
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" class="pagination--pager" title="Snort Rule
 ">이전</a>
     
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/" class="pagination--pager" title="메일 프로토콜과 구성요소
+      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Basic-of-Windows/" class="pagination--pager" title="윈도우 기본
 ">다음</a>
     
   </nav>
@@ -454,14 +445,14 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/" rel="permalink">CSMA/CD
+        <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" rel="permalink">Snort Rule
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">CSMA/CD 방식에 대해 알아보자.
+    <p class="archive__item-excerpt" itemprop="description">Snort에 대해 알아보자.
 </p>
   </article>
 </div>
@@ -525,8 +516,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

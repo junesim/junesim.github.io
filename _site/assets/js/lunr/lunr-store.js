@@ -65,10 +65,22 @@ var store = [{
         "url": "http://localhost:4000/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python/",
         "teaser": null
       },{
+        "title": "OSI 7계층",
+        "excerpt":"OSI 7계층에 대해 알아보자 물 -&gt; 데 -&gt; 네 -&gt; 전 -&gt; 세 -&gt; 표 -&gt; 응 물리, 데이터링크, 네트워크, 전송, 세션, 표현, 응용 계층으로 이루어져있다. 이를 OSI 7계층이라고 한다. 물리 계층 데이터 링크 계층 MAC를 이용해서 통신을한다. 흔히 말하는 L2 스튀치의 경우 MAC 주소를 보고 해당 데이터를 어디로 보낼지...","categories": ["네트워크"],
+        "tags": [],
+        "url": "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/OSI-7-Level/",
+        "teaser": null
+      },{
         "title": "IP Class들과 서브넷",
         "excerpt":"IP 클래스들에 대해 알아보자. IP의 경우 5개의 클래스로 이루어져있다. 그리고 클래스 별로 서브넷 마스크가 달라 이에 대한 숙지가 필요하다. 공인 IP와 사설 IP 공인 IP란 전 세계에서 유일한 IP 주소로 ISP가 제공하는 IP 주소이다. 외부에 공개된 주소로 인터넷에 연결된 다른 PC로부터의 접근이 가능하다. 즉 외부 네트워크에 연결하기 위해 필요한 IP로...","categories": ["네트워크"],
         "tags": [],
         "url": "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/",
+        "teaser": null
+      },{
+        "title": "test",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/test/",
         "teaser": null
       },{
         "title": "GNS3 Firewall 실습",
@@ -83,9 +95,33 @@ var store = [{
         "url": "http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/",
         "teaser": null
       },{
+        "title": "Snort Rule",
+        "excerpt":"Snort에 대해 알아보자.   Action      alert   log   pass   drop   reject   sdrop   Protocol      tcp   udp   ip   icmp   any   방향지정      -&gt;   &lt;-   &lt;&gt;   일반 옵션      msg   sid   rev   priority   classtype   reference   문법 Action Protocol SrcIP SrcPort -&gt; DstIP DstProt option  ","categories": ["정보보안"],
+        "tags": [],
+        "url": "http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/",
+        "teaser": null
+      },{
+        "title": "CSMA/CD",
+        "excerpt":"CSMA/CD 방식에 대해 알아보자. CSMA/CD Carrier Sense Multiple Access/Collision Detection의 약자다. Ethernet(이더넷) 방식의 프로토콜로 통신을 할 때 네트워크상에 통신이 일어나고 있는지를 확인한다. 이를 Carrier Sense라고 한다. Carrier란 네트워크 상에 나타나는 신호를 의미한다. 네트워크 상에 Carrier가 탐지될 경우 통신이 완료되기까지 기다린다. 네트워크 상에 통신이 일어나지 않을 때, 두 대 이상의 PC...","categories": ["네트워크"],
+        "tags": [],
+        "url": "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/",
+        "teaser": null
+      },{
+        "title": "윈도우 기본",
+        "excerpt":"aasss  ","categories": ["정보보안"],
+        "tags": ["정보보안기사","윈도우"],
+        "url": "http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Basic-of-Windows/",
+        "teaser": null
+      },{
         "title": "Server",
         "excerpt":"서버란 무엇인가. 사용자들에게 서비스를 제공해 주는 것. 사용자(Client)들의 요구에 따라서 필요한 서비스를 제공해주는 장비다. 어원은 특정 역할에 특화 된 것을 의미한다고 한다. 용도에 따라서 구조가 나눠지는데 크게 클라이언트-서버 구조와 3-tier 구조로 나눌수 있다. 클라이언트-서버 구조 사용자(Client)가 특정 프로그램(Client Program)을 설치하고 이를 이용해 서버에 접속 해 서버가 제공하는 서비스를 이용한다. 해당...","categories": ["ICT"],
-        "tags": [],
+        "tags": ["서버","3 계층 구조","3-Tier Archtecture"],
         "url": "http://localhost:4000/ict/Server/",
+        "teaser": null
+      },{
+        "title": "Storage",
+        "excerpt":"스토리지란 무엇인가. 스토리지란 직역하자면 저장 장치이다. 우리가 사용하는 PC의 경우 PC에 디스크가 있고 해당 위치에 OS, DATA를 저장하고 이를 사용한다. 하지만 DB나 다중 사용자 환경을 지원하는 서버의 경우 가지고 있는 슬롯만으로는 확장성에 한계가 있다. 성능 및 경제적인 문제로 서버는 Compute 용도로만 사용하고 스토리지의 경우 외부 장치를 이용하는 것이 일반적이다. HCI...","categories": ["ICT"],
+        "tags": ["Storage","DAS","NAS","SAN"],
+        "url": "http://localhost:4000/ict/Storage/",
         "teaser": null
       }]
