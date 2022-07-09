@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>DNS - 개발새발</title>
-<meta name="description" content="DNS란 무엇인가">
+<!-- begin _includes/seo.html --><title>클라우드 도입을 위한 핵심 기술 - 개발새발</title>
+<meta name="description" content="클라우드 도입을 위한 핵심 기술">
 
 
   <meta name="author" content="박준수">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="DNS">
-<meta property="og:url" content="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">
+<meta property="og:title" content="클라우드 도입을 위한 핵심 기술">
+<meta property="og:url" content="http://localhost:4000/cloud/Cloud/">
 
 
-  <meta property="og:description" content="DNS란 무엇인가">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-11-11T00:00:00+09:00">
+  <meta property="og:description" content="클라우드 도입을 위한 핵심 기술">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-06-02T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/">
+
+<link rel="canonical" href="http://localhost:4000/cloud/Cloud/">
 
 
 
@@ -276,15 +276,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DNS">
-   <meta itemprop="description" content="DNS란 무엇인가">
-    <meta itemprop="datePublished" content="2020-11-11T00:00:00+09:00">
+    <meta itemprop="headline" content="클라우드 도입을 위한 핵심 기술">
+   <meta itemprop="description" content="클라우드 도입을 위한 핵심 기술">
+    <meta itemprop="datePublished" content="2022-06-02T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">DNS
+          <h1 id="page-title" class="page__title" itemprop="headline">클라우드 도입을 위한 핵심 기술
 </h1>
           
 
@@ -294,22 +294,93 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>DNS란 무엇인가</p>
+        <h2 id="클라우드-도입을-위한-핵심-기술">클라우드 도입을 위한 핵심 기술</h2>
 
-<h2>DNS 서버</h2>
+<p>셀프서비스, Pay As You Go, 공유, 신속 제공 및 배포, 이용자의 요구나 수요에 따른 서비스 제공</p>
 
-<p>Domain Name Server의 약자.</p>
+<p><strong>HOST &amp; Server</strong>
+보통이를 혼용해서 사용하는데, 여기서는 HOST는 H/W를 서버를 VM으로 이야기한다.</p>
 
-<p>모든 통신은 IP로 통신이 되는데 이를 사람이 기억하긴 힘드니 IP를 도메인으로 바꿔주는 역할을 한다. 기존에는 hosts 파일(호스트 파일)을 이용해 네트워크에 접속했는데 네트워크 상의 컴퓨터의 증가로 이를 일일히 개인이 기억하는 것은 비효율적.
-따라서 이를 전문적으로 해주는 DNS 서버를 생성해서 이용하게 된다.</p>
+<p><strong>Pay As You Go</strong> 이용한 만큼 돈을 내는 정책을 말한다.
+투자비용이 줄어든다.</p>
 
-<p>ex) PowerDNS,ndjbdns,knot,unbound,bind</p>
+<p><strong>DT</strong>의 핵심이 되는 기술 중 하나.
+DT의 핵심은 클라우드, 빅데이터, AI.</p>
 
-<p>도메인 입력 시 먼저 호스트 파일을 참조, 없으면 resolv.conf를 참조해 네임서버에 대한 정보를 얻고 네임 서버에 도메인을 질의 함.</p>
+<p><strong>온프레미스</strong> 사용자가 구축하고 운영하는 것. 자체 구축하고 관리하는 것.</p>
 
-<p>네임서버는 DNS 서버
-도메인 이름을 IP 주소로 변환시켜주는 역할
-=Name Resoulution</p>
+<p><strong>셀프서비스</strong> 논리적으로 HW 등을 구성하고 세팅이 가능하다. POC</p>
+
+<p><strong>Public Cloud:</strong> 불특정다수가 사용할 경우, Online 환경
+<strong>Private Cloud:</strong> 특정한 사용자(기업 내 등)만 사용할 경우, Offline 환경
+<strong>Hybrid Cloud:</strong> 위 두가지 형태가 혼용</p>
+
+<p>클라우드 환경이 운영 및 구성에 용이함에도 불구하고 기업의 Core System 및 보안정책으로 완전한 클라우드 전환을 하지 않는다.
+하지만 기업에서 자체적으로 Private Cloud 환경을 구축해 이를 보완할 수 있다.</p>
+
+<p><strong>가상화</strong> 물리적 IT 리소스를 가상의 IT 리소스로 전환하는 기술
+클라우드 이전에 가상화가 이전에 완료되어야 함. 가상화 기술로 가상 머신(VM)을 생성하고 이들은 서로 격리된 상태이다. 서로가 영향을 받지 않는다. 
+    1. HOST 가상화: 호스트 OS 위에 하이퍼바이저를 설치한 후 이를 통해 VM 생성 및 관리
+    2. 하이퍼바이저(베어메탈) 가상화: 호스트 OS 없이 하이퍼바이저 위에서 VM 생성 및 관리</p>
+
+<p><strong>프로비저닝</strong> 어원은 준비, 예비에서 나왔으나 클라우드에서는 사용자에게 자원 할당 및 정책, 서비스 지원을 의미한다.</p>
+
+<p><strong>클라우드 서비스 운영</strong>
+사용자가 자원을 신청 -&gt; 관리자가 자원 관리 -&gt; 사요아작 서비스에 접근 및 이용, 대가 지불</p>
+
+<p><strong>Auto Scaling</strong>
+서버가 사용량에 따라 필요시 서버의 자원을 동적으로 관리 가능</p>
+
+<p><strong>IaaS</strong>
+HW 자원을 CSP가 제공. 하드웨어, 스토리지, 네트워크 장비들을 임대하는 것</p>
+
+<p><strong>PaaS</strong>
+하드웨어 뿐만이 아니라 개발환경까지 CSP한테서 임대하는 것. 애플리케이션 플랫폼에 종속될 수 있다.</p>
+
+<p><strong>SaaS</strong>
+구글 드라이브 등과 같이 개발된 소프트웨어를 제공 받는 것</p>
+
+<h1 id="클라우드-서비스-운영-환경">클라우드 서비스 운영 환경</h1>
+
+<h2 id="vmware">VMware</h2>
+<p>Console OS 에서 Guest OS 관리
+ESX가 Hypervisor 역할을 수행한다.
+자원 공유 및 스케줄링 
+vCenter: 관리도구
+VMware DRS: 리소스를 분산해서 스케쥴링
+VMotion: VM을 이동시키는거
+HA(High Availblity): 고가용성, HW에 장애 발생시 다른 것으로 넘기는거. Downtime 발생
+FT(Fault Tolerant): Downtime이 없는 방법, 다른 호스트에 쉐도우 가상 머신이 생성이되고 운영 호스트가 죽었을 때 쉐도우 가상머신이 올라와서 운영 이관.</p>
+
+<h2 id="openstack">Openstack</h2>
+
+<p><strong>6 Core</strong>
+Compute Node: NOVA(Core)
+Network Service: Neutron(Core)
+Block Storage: Cinder(Core)
+Image Storage: Glance(Core)
+인증 수단: Keystone(Core)
+Object Storage: Swift(Core) -&gt; 이걸로 백업을 받아.</p>
+
+<p><strong>추가 구성 요소</strong>
+Dashboard: Horizon
+ORCHESTRATION: 템플릿 배포, 앤서블?
+KVM 기반이지만 다른 Hypervisor를 수용가능하다. 
+Flavor: 템플릿
+네트워크 노드(Linux Bridege): VM들은 네트워크 노드를 통해서 나간다. 내부 통신은 OVS를 통해서 진행한다. 따라서 내부통신은 전혀 문제가 없지만 외부와의 통신은 네트워크 노드를 통해서 진행되어 트래픽 과부하가 일어날 수 있다. 이 대안으로 DVR이 나왔다. 가상 라우터를 컴퓨트 노드마다 분산 배치해서 이를 해결한다.</p>
+
+<p><strong>API 기반</strong>
+HTTP API, REST API를 통해서 해애 돼.</p>
+
+<p>VMware는 ESXi
+MS는 Hyper-V
+Linux는 KVM/QEMU
+KVM: CPU, Memory 등 H/W를 관여
+QEMU: I/O Interface 등 S/W 기반</p>
+
+<p><strong>Leaf/Spine</strong>
+앞으로 모든 전산실의 네트워크 구조는 Leaf/Spine 구조로 향하게 될 것이다. 
+cyro: 씨앗 창고? SDDC에서는 자원을 저렇게 부르나봐</p>
 
         
       </section>
@@ -317,6 +388,25 @@
       <footer class="page__meta">
         
         
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#cloud" class="page__taxonomy-item" rel="tag">Cloud</a>
+    
+    </span>
+  </p>
+
+
 
 
   
@@ -332,14 +422,14 @@
     
       
       
-      <a href="/categories/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="page__taxonomy-item" rel="tag">네트워크</a>
+      <a href="/categories/#cloud" class="page__taxonomy-item" rel="tag">Cloud</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2020-11-11T00:00:00+09:00">November 11, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2022-06-02T00:00:00+09:00">June 2, 2022</time></p>
 
 
       </footer>
@@ -349,22 +439,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=DNS%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDNS%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EB%8F%84%EC%9E%85%EC%9D%84+%EC%9C%84%ED%95%9C+%ED%95%B5%EC%8B%AC+%EA%B8%B0%EC%88%A0%20http%3A%2F%2Flocalhost%3A4000%2Fcloud%2FCloud%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDNS%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcloud%2FCloud%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%2584%25A4%25ED%258A%25B8%25EC%259B%258C%25ED%2581%25AC%2FDNS%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fcloud%2FCloud%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/WEB-WAS/" class="pagination--pager" title="WEB Server와 WAS의 차이
+      <a href="/network/Network-design/" class="pagination--pager" title="네트워크 디자인
 ">이전</a>
     
     
-      <a href="/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/" class="pagination--pager" title="DHCP
+      <a href="/ict/DevOps/" class="pagination--pager" title="Devops
 ">다음</a>
     
   </nav>
@@ -411,28 +501,6 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/cloud/Cloud/" rel="permalink">클라우드 도입을 위한 핵심 기술
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">클라우드 도입을 위한 핵심 기술
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
         <a href="/network/Network-design/" rel="permalink">네트워크 디자인
 </a>
       
@@ -463,6 +531,28 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">## 스토리지란
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ict/Server/" rel="permalink">Server
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">서버란 무엇인가.
 </p>
   </article>
 </div>
@@ -526,8 +616,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DNS"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/cloud/Cloud/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/cloud/Cloud"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

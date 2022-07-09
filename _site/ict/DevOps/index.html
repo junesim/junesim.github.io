@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Server - 개발새발</title>
-<meta name="description" content="서버란 무엇인가.">
+<!-- begin _includes/seo.html --><title>Devops - 개발새발</title>
+<meta name="description" content="DevOps란">
 
 
   <meta name="author" content="박준수">
@@ -22,23 +22,21 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="개발새발">
-<meta property="og:title" content="Server">
-<meta property="og:url" content="http://localhost:4000/ict/Server/">
+<meta property="og:title" content="Devops">
+<meta property="og:url" content="http://localhost:4000/ict/DevOps/">
 
 
-  <meta property="og:description" content="서버란 무엇인가.">
-
-
-
+  <meta property="og:description" content="DevOps란">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-09T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-17T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-07-08T00:00:00+09:00">
+
+
 
 
 
@@ -47,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/ict/Server/">
+<link rel="canonical" href="http://localhost:4000/ict/DevOps/">
 
 
 
@@ -278,15 +276,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Server">
-   <meta itemprop="description" content="서버란 무엇인가.">
-    <meta itemprop="datePublished" content="2022-04-09T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-17T00:00:00+09:00">
+    <meta itemprop="headline" content="Devops">
+   <meta itemprop="description" content="DevOps란">
+    <meta itemprop="datePublished" content="2022-07-08T00:00:00+09:00">
+    
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Server
+          <h1 id="page-title" class="page__title" itemprop="headline">Devops
 </h1>
           
 
@@ -296,51 +294,86 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>서버란 무엇인가.</p>
+        <h2 id="devops란">DevOps란</h2>
 
-<p><strong>사용자들에게 서비스를 제공해 주는 것.</strong></p>
-
-<p><strong>사용자(Client)</strong>들의 요구에 따라서 필요한 서비스를 제공해주는 장비다.</p>
+<p><strong>DevOps</strong>란 프로그램 개발 방법론의 하나로 개발자와 운영자와의 협업 및 전환을 빠르게 하기 위한 방법이다.</p>
 
 <blockquote>
-  <p>어원은 <strong>특정 역할에 특화 된 것</strong>을 의미한다고 한다.</p>
+  <p>소프트웨어 개발 방법론의 하나로, 개발(development)과 운영(operation)을 결합한 혼성어이다. 개발 담당자와 운영 담당자가 연계하여 협력하는 개발 방법론을 말한다.</p>
+
+  <p>– 두산백과</p>
 </blockquote>
 
-<p>용도에 따라서 구조가 나눠지는데 크게 <strong>클라이언트-서버 구조</strong>와 <strong>3-tier 구조</strong>로 나눌수 있다.</p>
+<p>전통적인 조직의 경우 개발자부서에서 개발을 하고 운영을 하는 부서가 이를 넘겨 받아 운영을 한다. 개발자들이 시스템 전반적인 지식이 없는 경우 자신이 작성한 프로그램이 로컬에서는 돌아가지만 시스템에 영향을 주거나 정상적인 동작을 하지 못하는 경우가 있었다고 한다.</p>
 
-<h2 id="클라이언트-서버-구조">클라이언트-서버 구조</h2>
+<p align="center"><img src="/img/ICT/DevOps/devvsops.jpeg" height="100px" width="400px" /></p>
 
-<p>사용자(Client)가 <strong>특정 프로그램(Client Program)</strong>을 설치하고 이를 이용해 서버에 접속 해 서버가 제공하는 서비스를 이용한다.</p>
+<p>개발부서와 운영부서와의 마찰을 줄이고 능률을 향상 시키기 위해 <strong>DevOps</strong>라는 role이 생기게 되었다. 
+<strong>Devops</strong>는 자동화, 협업, 빠른 피드백과 반복적인 개선과정을 통해 개발과 운영의 전환 속도를 빠르게 지원한다.</p>
 
-<p>해당 서비스에 기능이 추가되거나 보완이 되는 경우 클라이언트 업데이트가
-  필요한 경우도 있다.</p>
+<h2 id="gitlab">GitLab</h2>
 
-<p>이용자가 클라이언트를 업데이트 해야 되는 불편함이 감수되고, 사용자가
- 업데이트를 안하고 서비스를 사용한다면 시스템적으로 취약점이 될 수도 있다.</p>
+<p>GitLab은 Offline 환경에서도 지원을 해 많은 회사 및 조직에서 사용 중인 서비스다. GitLab에서는 단순 레포지토리로서의 개념이 아닌 운영에도 많은 도움을 주는 관리도구들이 많아 <strong>DevOps</strong>를 구현하는데 좋은 환경이라고 한다.</p>
 
-<h2 id="3-tier-구조">3-Tier 구조</h2>
+<h2 id="devops-in-gitlab">DevOps in GitLab</h2>
 
-<p>웹 서비스에서 많이 사용 되는 구조로 <strong>프레젠테이션, 애플리케이션, 데이터</strong> 계층으로 이루어져 있다.</p>
+<p>깃랩에서 DevOps를 어떤 원칙과 방식으로 지원하고 구현하는지 알아보도록 하자.</p>
+
+<h3 id="devops-4대-원칙"><strong>DevOps 4대 원칙</strong></h3>
+<ul>
+  <li>소프트웨어 개발 생명주기의 자동화</li>
+  <li>협동과 소통</li>
+  <li>지속적 향상 및 소모 자원의 최소화</li>
+  <li>빠른 피드백 주기로 사용자 요구의 집중</li>
+</ul>
+
+<p>해당 4대 원칙을 DevOps의 중요 요소로 Gitlab에서는 정의한다. 해당 원칙을 바탕으로 위에서 말한 DevOps의 목표인 개발과 운영간의 전환을 빠르게 한다.</p>
+
+<h3 id="devops-4단계"><strong>DevOps 4단계</strong></h3>
+
+<p>DevOps가 생기며 복잡해지는 경우가 있는데, 이는 두가지 요인 때문이다.</p>
+
+<ul>
+  <li>모놀리식 아키텍처에서 MSA(Microservice Architectures)로의 변화</li>
+  <li>관리도구와 프로젝트의 증가로 프로젝트 도구의 통합이 필요할 경우.</li>
+</ul>
+
+<p>위의 요인을 위한 진화는 4가지 단계로 진행된다.</p>
+
+<p><strong>1. 자신만의 DevOps 구현</strong><br />
+   각 팀과 개발자들은 자신만의 DevOps 도구를 선택하게 된다. 이렇게 되면 다른 개발자들 및 팀들과의 협업에서 문제가 생길 수 있는데 이는 다른 팀들이 당신의 도구에 익숙하지 않기 때문이다.</p>
+
+<p><strong>2. Best-in-Class DevOps</strong><br />
+   이 단계에서는 서로 다른 도구들을 지양하고, 같은 도구들을 사용하도록 정의한다. DevOps 주기의 각 단계에서 선호하는 하나의 도구를 선택하고 정의함으로 조직간의 협업을 원할히 수행 할 수 있도록 돕는다. 하지만 도구들을 한정적으로 선택하며 소프트웨어를 변경해야되는 문제가 생길 수 있다.</p>
+
+<p><strong>3. DIY DevOps</strong><br />
+   위 문제를 해결하기 위해 DIY DevOps 단계를 수행한다. 개발자들은 DevOps 솔루션을 통합하기 위해 다시 개발을 하게 된다. 보통 개발과정에서 다른 개발 도구들과의 통합이나 팀들간의 통합이 고려되지 않기 때문에 해당 과정이 성공적으로 수행되는 경우가 드물다.</p>
+
+<p><strong>4. DevOps Platform</strong><br />
+   위에서 사용되는 문제들을 해결하기 위해 단일 어플리케이션 플랫폼<strong>(Gitlab)</strong>이 등장하게 되었다. 개발, 운영, 보안 등 전산 전반에 기여하는 팀들이 사용하는 도구들을 DevOps 주기(계획, 빌드, 보안, 배포)에 맞춰 end-to-end에서 융합 가능한 시스템으로 제공된다. 사용자 친화적인 UI, 융합된 코드 저장소에서 단일 코드 베이스로 제작되어 비효율적이고 신뢰성 낮은 DIY DevOps 환경 보다 신뢰성 높게 동작한다.</p>
+
+<h3 id="devops-생명주기"><strong>DevOps 생명주기</strong></h3>
+
+<p>DevOps 생명주기는 아래의 10단계로 이루어져있다.</p>
 
 <ol>
-  <li>
-    <p>프레젠테이션 계층</p>
-
-    <p>사용자의 입력을 받고 결과를 표시한다. 웹 서비스에서는 웹 화면을 띄워주는 웹 서버가 해당된다.</p>
-  </li>
+  <li>관리</li>
+  <li>계획</li>
+  <li>생성</li>
+  <li>검증</li>
+  <li>Package</li>
+  <li>보안</li>
+  <li>배포</li>
+  <li>구성</li>
+  <li>모니터링</li>
+  <li>보호</li>
 </ol>
 
-<!--<h2>웹 서버</h2>
-&nbsp;기본 APM(Apache(웹 서버), PhP(프로그래밍 언어), MySql(데이터베이스,요즘엔 MariaDB) 이렇게 해서 APM이라고 불린다. 기본이지만 요즘에는 장고(Django) 나 다른 방법으로 구축할 수 있습니다. 요즘엔 Apache 대신 Tomcat을 사용합니다.
- 
-&nbsp;보통 웹 서버의 경우 리눅스를 이용해서 구축을 많이 하는데 리눅스의 대표적인 특징에는 <strong>쉘</strong>과 <strong>커널</strong>이 있다.
+<p>결국 DevOps의 목표는 빠르게 변하는 시장에 맞춰 효율적으로 개발하고 배포하는데 필요없는 소모를 줄이는 것이다.</p>
 
-<h2>WAS 서버</h2>
-<h2>쉘</h2>
-&nbsp;쉘의 경우 사용자와 커널간의 인터페이스이다. 사용자가 명령어를 입력하는 bash 쉘이 대표적이다.
-<h2>커널</h2>
-&nbsp;커널은 하드웨어의 동작 관리 및 소프트웨어와의 동작을 가능하게 해준다. 커널의 경우 OS의 핵심이라고 할만큼 중요하다. 커널에서 실행되는 프로그램에는 주의가 필요하며 보통 <strong>root</strong> 계정이 커널에 영향을 끼칠 수 가 있어 보안적으로 대비가 필요하다. 
--->
+<h2 id="reference">Reference</h2>
+
+<p><a href="https://about.gitlab.com/topics/devops/#what-is-a-dev-ops-platform">GitLab-What is DevOps</a></p>
 
         
       </section>
@@ -361,15 +394,11 @@
     
       
       
-      <a href="/tags/#3-%EA%B3%84%EC%B8%B5-%EA%B5%AC%EC%A1%B0" class="page__taxonomy-item" rel="tag">3 계층 구조</a><span class="sep">, </span>
+      <a href="/tags/#operation" class="page__taxonomy-item" rel="tag">Operation</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#3-tier-archtecture" class="page__taxonomy-item" rel="tag">3-Tier Archtecture</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#%EC%84%9C%EB%B2%84" class="page__taxonomy-item" rel="tag">서버</a>
+      <a href="/tags/#%EC%9D%B8%ED%94%84%EB%9D%BC" class="page__taxonomy-item" rel="tag">인프라</a>
     
     </span>
   </p>
@@ -397,7 +426,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2022-04-17">April 17, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2022-07-08T00:00:00+09:00">July 8, 2022</time></p>
 
 
       </footer>
@@ -407,23 +436,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Server%20http%3A%2F%2Flocalhost%3A4000%2Fict%2FServer%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Devops%20http%3A%2F%2Flocalhost%3A4000%2Fict%2FDevOps%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fict%2FServer%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fict%2FDevOps%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fict%2FServer%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fict%2FDevOps%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Basic-of-Windows/" class="pagination--pager" title="윈도우 기본
+      <a href="/cloud/Cloud/" class="pagination--pager" title="클라우드 도입을 위한 핵심 기술
 ">이전</a>
     
     
-      <a href="/ict/Storage/" class="pagination--pager" title="Storage
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -437,28 +465,6 @@
     <div class="page__related">
       <h4 class="page__related-title">참고</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ict/DevOps/" rel="permalink">Devops
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">DevOps란
-</p>
-  </article>
-</div>
-
         
           
 
@@ -526,6 +532,28 @@
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ict/Server/" rel="permalink">Server
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">서버란 무엇인가.
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
   
@@ -584,8 +612,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/ict/Server/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/ict/Server"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/ict/DevOps/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/ict/DevOps"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
