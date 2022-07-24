@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-09T15:44:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">개발새발</title><subtitle>A friend who shares is a friend who cares.</subtitle><author><name>박준수</name></author><entry><title type="html">Devops</title><link href="http://localhost:4000/ict/DevOps/" rel="alternate" type="text/html" title="Devops" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/ict/DevOps</id><content type="html" xml:base="http://localhost:4000/ict/DevOps/"><![CDATA[<h2 id="devops란">DevOps란</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-24T14:41:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">개발새발</title><subtitle>A friend who shares is a friend who cares.</subtitle><author><name>박준수</name></author><entry><title type="html">Devops</title><link href="http://localhost:4000/ict/DevOps/" rel="alternate" type="text/html" title="Devops" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/ict/DevOps</id><content type="html" xml:base="http://localhost:4000/ict/DevOps/"><![CDATA[<h2 id="devops란">DevOps란</h2>
 
 <p><strong>DevOps</strong>란 프로그램 개발 방법론의 하나로 개발자와 운영자와의 협업 및 전환을 빠르게 하기 위한 방법이다.</p>
 
@@ -56,9 +56,10 @@
 <p><strong>4. DevOps Platform</strong><br />
    위에서 사용되는 문제들을 해결하기 위해 단일 어플리케이션 플랫폼<strong>(Gitlab)</strong>이 등장하게 되었다. 개발, 운영, 보안 등 전산 전반에 기여하는 팀들이 사용하는 도구들을 DevOps 주기(계획, 빌드, 보안, 배포)에 맞춰 end-to-end에서 융합 가능한 시스템으로 제공된다. 사용자 친화적인 UI, 융합된 코드 저장소에서 단일 코드 베이스로 제작되어 비효율적이고 신뢰성 낮은 DIY DevOps 환경 보다 신뢰성 높게 동작한다.</p>
 
-<h3 id="devops-생명주기"><strong>DevOps 생명주기</strong></h3>
+<h2 id="devops-생명주기"><strong>DevOps 생명주기</strong></h2>
 
-<p>DevOps 생명주기는 아래의 10단계로 이루어져있다.</p>
+<p>DevOps 생명주기는 아래의 10단계로 이루어져있다.
+해당 단계를 통해 배포, 유지 보수 및 보안성을 유지하며 S/W가 개발되고 운영된다.</p>
 
 <ol>
   <li>관리</li>
@@ -73,225 +74,27 @@
   <li>보호</li>
 </ol>
 
+<h2 id="devops-도구-및-구성-요소">DevOps 도구 및 구성 요소</h2>
+
+<ol>
+  <li>Source Code Management</li>
+  <li>Agile Project &amp; Portfolio Management</li>
+  <li>CI(Continuous Integration)</li>
+  <li>CD(Continuous Delivery)</li>
+  <li>Shift Left Security</li>
+  <li>Monitoring and Feedback</li>
+  <li>Rapid Innovation</li>
+</ol>
+
+<h2 id="devops-engineer">DevOps Engineer</h2>
+
+<p>DevOps Engineer는 모든 소프트웨어 개발 및 운영을 신경써야된다. 개발 과정을 업무 흐름에 녹여야 되고 자동화가 가능한 부분을 판단하고 적용해야하며 개발 코드들을 분석하고 테스트 해야한다. DevOps Engineer는 빌드, 배포, 업데이트 및 환경 구성 등 모든 전반적인 부분을 책임지고 관리해야한다. 따라서 개발 언어에 대한 이해가 필요하며, 기술자들간의 의사소통 능력 뿐만 아니라 사업 및 비즈니스에 대한 이해도 필요하다.</p>
+
 <p>결국 DevOps의 목표는 빠르게 변하는 시장에 맞춰 효율적으로 개발하고 배포하는데 필요없는 소모를 줄이는 것이다.</p>
 
 <h2 id="reference">Reference</h2>
 
-<p><a href="https://about.gitlab.com/topics/devops/#what-is-a-dev-ops-platform">GitLab-What is DevOps</a></p>]]></content><author><name>박준수</name></author><category term="ICT" /><category term="Operation" /><category term="인프라" /><summary type="html"><![CDATA[DevOps란]]></summary></entry><entry><title type="html">클라우드 도입을 위한 핵심 기술</title><link href="http://localhost:4000/cloud/Cloud/" rel="alternate" type="text/html" title="클라우드 도입을 위한 핵심 기술" /><published>2022-06-02T00:00:00+09:00</published><updated>2022-06-02T00:00:00+09:00</updated><id>http://localhost:4000/cloud/Cloud</id><content type="html" xml:base="http://localhost:4000/cloud/Cloud/"><![CDATA[<h2 id="클라우드-도입을-위한-핵심-기술">클라우드 도입을 위한 핵심 기술</h2>
-
-<p>셀프서비스, Pay As You Go, 공유, 신속 제공 및 배포, 이용자의 요구나 수요에 따른 서비스 제공</p>
-
-<p><strong>HOST &amp; Server</strong>
-보통이를 혼용해서 사용하는데, 여기서는 HOST는 H/W를 서버를 VM으로 이야기한다.</p>
-
-<p><strong>Pay As You Go</strong> 이용한 만큼 돈을 내는 정책을 말한다.
-투자비용이 줄어든다.</p>
-
-<p><strong>DT</strong>의 핵심이 되는 기술 중 하나.
-DT의 핵심은 클라우드, 빅데이터, AI.</p>
-
-<p><strong>온프레미스</strong> 사용자가 구축하고 운영하는 것. 자체 구축하고 관리하는 것.</p>
-
-<p><strong>셀프서비스</strong> 논리적으로 HW 등을 구성하고 세팅이 가능하다. POC</p>
-
-<p><strong>Public Cloud:</strong> 불특정다수가 사용할 경우, Online 환경
-<strong>Private Cloud:</strong> 특정한 사용자(기업 내 등)만 사용할 경우, Offline 환경
-<strong>Hybrid Cloud:</strong> 위 두가지 형태가 혼용</p>
-
-<p>클라우드 환경이 운영 및 구성에 용이함에도 불구하고 기업의 Core System 및 보안정책으로 완전한 클라우드 전환을 하지 않는다.
-하지만 기업에서 자체적으로 Private Cloud 환경을 구축해 이를 보완할 수 있다.</p>
-
-<p><strong>가상화</strong> 물리적 IT 리소스를 가상의 IT 리소스로 전환하는 기술
-클라우드 이전에 가상화가 이전에 완료되어야 함. 가상화 기술로 가상 머신(VM)을 생성하고 이들은 서로 격리된 상태이다. 서로가 영향을 받지 않는다. 
-    1. HOST 가상화: 호스트 OS 위에 하이퍼바이저를 설치한 후 이를 통해 VM 생성 및 관리
-    2. 하이퍼바이저(베어메탈) 가상화: 호스트 OS 없이 하이퍼바이저 위에서 VM 생성 및 관리</p>
-
-<p><strong>프로비저닝</strong> 어원은 준비, 예비에서 나왔으나 클라우드에서는 사용자에게 자원 할당 및 정책, 서비스 지원을 의미한다.</p>
-
-<p><strong>클라우드 서비스 운영</strong>
-사용자가 자원을 신청 -&gt; 관리자가 자원 관리 -&gt; 사요아작 서비스에 접근 및 이용, 대가 지불</p>
-
-<p><strong>Auto Scaling</strong>
-서버가 사용량에 따라 필요시 서버의 자원을 동적으로 관리 가능</p>
-
-<p><strong>IaaS</strong>
-HW 자원을 CSP가 제공. 하드웨어, 스토리지, 네트워크 장비들을 임대하는 것</p>
-
-<p><strong>PaaS</strong>
-하드웨어 뿐만이 아니라 개발환경까지 CSP한테서 임대하는 것. 애플리케이션 플랫폼에 종속될 수 있다.</p>
-
-<p><strong>SaaS</strong>
-구글 드라이브 등과 같이 개발된 소프트웨어를 제공 받는 것</p>
-
-<h1 id="클라우드-서비스-운영-환경">클라우드 서비스 운영 환경</h1>
-
-<h2 id="vmware">VMware</h2>
-<p>Console OS 에서 Guest OS 관리
-ESX가 Hypervisor 역할을 수행한다.
-자원 공유 및 스케줄링 
-vCenter: 관리도구
-VMware DRS: 리소스를 분산해서 스케쥴링
-VMotion: VM을 이동시키는거
-HA(High Availblity): 고가용성, HW에 장애 발생시 다른 것으로 넘기는거. Downtime 발생
-FT(Fault Tolerant): Downtime이 없는 방법, 다른 호스트에 쉐도우 가상 머신이 생성이되고 운영 호스트가 죽었을 때 쉐도우 가상머신이 올라와서 운영 이관.</p>
-
-<h2 id="openstack">Openstack</h2>
-
-<p><strong>6 Core</strong>
-Compute Node: NOVA(Core)
-Network Service: Neutron(Core)
-Block Storage: Cinder(Core)
-Image Storage: Glance(Core)
-인증 수단: Keystone(Core)
-Object Storage: Swift(Core) -&gt; 이걸로 백업을 받아.</p>
-
-<p><strong>추가 구성 요소</strong>
-Dashboard: Horizon
-ORCHESTRATION: 템플릿 배포, 앤서블?
-KVM 기반이지만 다른 Hypervisor를 수용가능하다. 
-Flavor: 템플릿
-네트워크 노드(Linux Bridege): VM들은 네트워크 노드를 통해서 나간다. 내부 통신은 OVS를 통해서 진행한다. 따라서 내부통신은 전혀 문제가 없지만 외부와의 통신은 네트워크 노드를 통해서 진행되어 트래픽 과부하가 일어날 수 있다. 이 대안으로 DVR이 나왔다. 가상 라우터를 컴퓨트 노드마다 분산 배치해서 이를 해결한다.</p>
-
-<p><strong>API 기반</strong>
-HTTP API, REST API를 통해서 해애 돼.</p>
-
-<p>VMware는 ESXi
-MS는 Hyper-V
-Linux는 KVM/QEMU
-KVM: CPU, Memory 등 H/W를 관여
-QEMU: I/O Interface 등 S/W 기반</p>
-
-<p><strong>Leaf/Spine</strong>
-앞으로 모든 전산실의 네트워크 구조는 Leaf/Spine 구조로 향하게 될 것이다. 
-cyro: 씨앗 창고? SDDC에서는 자원을 저렇게 부르나봐</p>]]></content><author><name>박준수</name></author><category term="Cloud" /><category term="Cloud" /><summary type="html"><![CDATA[클라우드 도입을 위한 핵심 기술]]></summary></entry><entry><title type="html">네트워크 디자인</title><link href="http://localhost:4000/network/Network-design/" rel="alternate" type="text/html" title="네트워크 디자인" /><published>2022-05-29T00:00:00+09:00</published><updated>2022-05-29T00:00:00+09:00</updated><id>http://localhost:4000/network/Network-design</id><content type="html" xml:base="http://localhost:4000/network/Network-design/"><![CDATA[<h2 id="네트워크-디자인">네트워크 디자인</h2>
-
-<h2 id="hierarchical-3-layer">Hierarchical 3 Layer</h2>
-<ul>
-  <li>Core Layer</li>
-  <li>Distributiion Layer</li>
-  <li>Access Layer</li>
-</ul>
-
-<h2 id="osi-7-layeriso-표준-모델">OSI 7 Layer(ISO 표준 모델)</h2>
-<ul>
-  <li>Application</li>
-  <li>Presentation</li>
-  <li>Session</li>
-  <li>Transport</li>
-  <li>Network</li>
-  <li>Data link</li>
-  <li>Physical</li>
-</ul>
-
-<h2 id="tcpip-model미-국방부">TCP/IP Model(미 국방부)</h2>
-<ul>
-  <li>Application(HTTP, Telnet, FTP)   : 패킷</li>
-  <li>Transport(TCP,UDP) : DST Port 부여</li>
-  <li>Network(IPv4, IPv6) : Protocol Number 부여</li>
-  <li>Datalink(PPP, Ethernet)   : 네트워크 내부에서 동작, frame, Type Number 부여</li>
-  <li>Physical                  : 세그먼트 내부에서 동작
- 각 계층별로 헤더를 부여한다. 패킷의 경우 2,3,4 계층의 헤더가 부여된 형태, 4계층의 데이터전송 단위.</li>
-</ul>
-
-<p>Novel, Apple, DEC 등 10가지 정도의 프로토콜이 있다.
-너무 많으니까 관리자 입장에서는 하나의 프로토콜을 이용하길 원한다.
-OSI, TCP/IP의 2가지 프로토콜만 남았다.
-TCP/IP 모델만 살아남아 사용을 하고 있다. OSI의 경우에는 상용화가 늦어서 TCP/IP 4계층 모델만 살아남게 되었다.</p>
-
-<h2 id="라우터와-스위치">라우터와 스위치</h2>
-<ul>
-  <li>
-    <p>라우터 
-     3계층(IP)를 가지고 매칭
-     3계층에서는 라우팅
-     2계층에서는 frame Rewrite
-     1계층에서는 증폭</p>
-  </li>
-  <li>
-    <p>스위치
-     2계층(MAC)을 가지고 매칭
-     2계층에서는 스위칭
-     1계층에서는 증폭
-     FCS 필드를 보고 패킷이 깨진거 확인</p>
-  </li>
-</ul>
-
-<h2 id="subnet-mask">Subnet Mask</h2>
-<p>네트워크와 Host 주소를 나누는 역할.
- 해당 주소의 경계 표시 0 ~ 255.255.255.255의 한정적인 주소 범위를 해결하기 위해 서브넷을 나눠 할당해 사용한다. 이도 부족해서 IPv6가 등장하게 되었다. 
- 네트워크 주소를 이용해 라우팅 테이블을 설정한다.</p>
-
-<h2 id="패킷의-이동">패킷의 이동</h2>
-<p>컴퓨터(APP)에서 가게 되면 장비별로 증폭 및 헤더 부착을 하고 전송</p>
-
-<p>WEB 서버 기준</p>
-
-<p>Client to Server : Request(Get, POST)</p>
-
-<p>Server to Client : Response(200,300,400,500)</p>
-
-<h2 id="ip설계">IP설계</h2>
-<ol>
-  <li>Subnet Mask 결정</li>
-  <li>중복되지 않은 IP 할당</li>
-</ol>
-
-<h2 id="tcpudp">TCP/UDP</h2>
-<p>TCP: MSS(Max Segment Size) 단위로 자른다.-&gt; 세그먼트 단위로 자른다. 네트워크 공유 가능. 어느 장비에서 보낸 패킷인지 확인 가능
- 패킷 단위가 커도 쓸 수 있다.</p>
-<ul>
-  <li>Sequence #에 맞춰서 조립 가능.</li>
-  <li>DST/SRC port가 존재</li>
-</ul>
-
-<p>UDP: 세그먼트 단위로 자르지 않는다.
- 네트워크 독점한다. 자르지 않을 작은 크기의 패킷이라면 사용하는게 좋다.</p>
-<ul>
-  <li>Sequence #가 없다.</li>
-  <li>DST/SRC port가 존재</li>
-</ul>
-
-<p>## TCP Packet</p>
-<ul>
-  <li>2계층에서 TYPE #</li>
-  <li>3계층에서 Protocol #</li>
-  <li>4계층에서 DST/SRC port</li>
-  <li>Sequence #가 있으면 TCP 없으면 UDP 등의 프로토콜</li>
-  <li>Code Bit
-    <ol>
-      <li>SYN</li>
-      <li>ACK : 받았다는 표시</li>
-      <li>FIN : 통신 종료</li>
-      <li>RST : 비정상적 종료</li>
-      <li>PSH : 푸시 비트, 주로 클라이언트의 통신이 끝났을 때 사용</li>
-      <li>URG : urgent 비트, 중요 데이터의 위치를 표시</li>
-    </ol>
-  </li>
-  <li>Control Bit
-    <ol>
-      <li>Error Control : Ack - #</li>
-      <li>Flow Control : Window Size(RWND, CWND)
-        <ul>
-          <li>CWND : 통신이 원할하지 않을 때 보내는 비트 추가 조사 필요. 큰 문제가 있을 경우는 1로 내려가고 작은 문제 3-Ack 등 이 경우에는 cwnd가 1/2로 내려감
-3-Ack를 통해 특정 패킷이 깨진것을 확인 가능
-            <h2 id="udp">UDP</h2>
-          </li>
-        </ul>
-      </li>
-    </ol>
-  </li>
-  <li>TYPE #</li>
-  <li>Protocol #</li>
-  <li>DST/SRC port</li>
-  <li>Length</li>
-  <li>Checksum
- 데이터 사이즈 적고 가까운 거리에 client server가 있는경우</li>
-</ul>
-
-<p>SYN-ACK 3-way Handshake 과정에서 사용. 
- Connection Oriented(TCP/PPP)
- 3-way Handshake 안할 경우 Connection less Protocol(UDP/IP/Ethernet)
- 마칠 경우 4-way HandShake 사용</p>]]></content><author><name>박준수</name></author><category term="Network" /><summary type="html"><![CDATA[네트워크 디자인]]></summary></entry><entry><title type="html">Storage</title><link href="http://localhost:4000/ict/Storage/" rel="alternate" type="text/html" title="Storage" /><published>2022-04-17T00:00:00+09:00</published><updated>2022-04-17T00:00:00+09:00</updated><id>http://localhost:4000/ict/Storage</id><content type="html" xml:base="http://localhost:4000/ict/Storage/"><![CDATA[<p>## 스토리지란</p>
+<p><a href="https://about.gitlab.com/topics/devops/#what-is-a-dev-ops-platform">GitLab-What is DevOps</a></p>]]></content><author><name>박준수</name></author><category term="ICT" /><category term="Operation" /><category term="인프라" /><summary type="html"><![CDATA[DevOps란]]></summary></entry><entry><title type="html">Storage</title><link href="http://localhost:4000/ict/Storage/" rel="alternate" type="text/html" title="Storage" /><published>2022-04-17T00:00:00+09:00</published><updated>2022-04-17T00:00:00+09:00</updated><id>http://localhost:4000/ict/Storage</id><content type="html" xml:base="http://localhost:4000/ict/Storage/"><![CDATA[<p>## 스토리지란</p>
 
 <p>스토리지란 직역하자면 <strong>저장 장치</strong>이다. 우리가 사용하는 PC의 경우 PC에 디스크가 있고 해당 위치에 OS, DATA를 저장하고 이를 사용한다.</p>
 
@@ -369,54 +172,7 @@ TCP/IP 모델만 살아남아 사용을 하고 있다. OSI의 경우에는 상�
 &nbsp;쉘의 경우 사용자와 커널간의 인터페이스이다. 사용자가 명령어를 입력하는 bash 쉘이 대표적이다.
 <h2>커널</h2>
 &nbsp;커널은 하드웨어의 동작 관리 및 소프트웨어와의 동작을 가능하게 해준다. 커널의 경우 OS의 핵심이라고 할만큼 중요하다. 커널에서 실행되는 프로그램에는 주의가 필요하며 보통 <strong>root</strong> 계정이 커널에 영향을 끼칠 수 가 있어 보안적으로 대비가 필요하다. 
--->]]></content><author><name>박준수</name></author><category term="ICT" /><category term="서버" /><category term="3 계층 구조" /><category term="3-Tier Archtecture" /><summary type="html"><![CDATA[서버란 무엇인가.]]></summary></entry><entry><title type="html">윈도우 기본</title><link href="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Basic-of-Windows/" rel="alternate" type="text/html" title="윈도우 기본" /><published>2021-02-09T00:00:00+09:00</published><updated>2021-02-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Basic-of-Windows</id><content type="html" xml:base="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Basic-of-Windows/"><![CDATA[<p>aasss</p>]]></content><author><name>박준수</name></author><category term="정보보안" /><category term="정보보안기사" /><category term="윈도우" /><summary type="html"><![CDATA[aasss]]></summary></entry><entry><title type="html">CSMA/CD</title><link href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/" rel="alternate" type="text/html" title="CSMA/CD" /><published>2020-12-29T00:00:00+09:00</published><updated>2020-12-29T00:00:00+09:00</updated><id>http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01</id><content type="html" xml:base="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-01/"><![CDATA[<p>CSMA/CD 방식에 대해 알아보자.</p>
-
-<h2 id="csmacd">CSMA/CD</h2>
-<p><strong>Carrier Sense Multiple Access/Collision Detection</strong>의 약자다.
-<strong>Ethernet(이더넷)</strong> 방식의 프로토콜로 통신을 할 때 네트워크상에 통신이 일어나고 있는지를 확인한다. 이를 <strong>Carrier Sense</strong>라고 한다. <strong>Carrier</strong>란 네트워크 상에 나타나는 신호를 의미한다. 네트워크 상에 Carrier가 탐지될 경우 통신이 완료되기까지 기다린다. 네트워크 상에 통신이 일어나지 않을 때, 두 대 이상의 PC 및 서버가 통신을 하고자 데이터를 전송했을 경우 이를 <strong>Multiple Access</strong>라고 한다.
-Multiple Access 상황에서는 <strong>Collision(충돌)</strong>이 발생할 수 있다. 따라서 데이터를 전송했을 때 Ethernet의 경우에는 충동이 일어났는지를 확인해야 한다. 이를 <strong>Collision Detection(충돌 감지)</strong>라고 한다. 충돌이 발생했을 경우 각 PC는 랜덤한 시간을 대기한 후 재전송을 하게 되는데 충돌이 지속될 경우에는 통신이 불가능해질 수 있다.</p>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[CSMA/CD 방식에 대해 알아보자.]]></summary></entry><entry><title type="html">Snort Rule</title><link href="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/" rel="alternate" type="text/html" title="Snort Rule" /><published>2020-12-11T00:00:00+09:00</published><updated>2020-12-11T00:00:00+09:00</updated><id>http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule</id><content type="html" xml:base="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/Snort-Rule/"><![CDATA[<p>Snort에 대해 알아보자.</p>
-
-<h2 id="action">Action</h2>
-
-<ul>
-  <li>alert</li>
-  <li>log</li>
-  <li>pass</li>
-  <li>drop</li>
-  <li>reject</li>
-  <li>sdrop</li>
-</ul>
-
-<h2 id="protocol">Protocol</h2>
-
-<ul>
-  <li>tcp</li>
-  <li>udp</li>
-  <li>ip</li>
-  <li>icmp</li>
-  <li>any</li>
-</ul>
-
-<h2 id="방향지정">방향지정</h2>
-
-<ul>
-  <li>-&gt;</li>
-  <li>&lt;-</li>
-  <li>&lt;&gt;</li>
-</ul>
-
-<h2 id="일반-옵션">일반 옵션</h2>
-
-<ul>
-  <li>msg</li>
-  <li>sid</li>
-  <li>rev</li>
-  <li>priority</li>
-  <li>classtype</li>
-  <li>reference</li>
-</ul>
-
-<p>문법 Action Protocol SrcIP SrcPort -&gt; DstIP DstProt option</p>]]></content><author><name>박준수</name></author><category term="정보보안" /><summary type="html"><![CDATA[Snort에 대해 알아보자.]]></summary></entry><entry><title type="html">SQL Injection</title><link href="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="alternate" type="text/html" title="SQL Injection" /><published>2020-12-07T00:00:00+09:00</published><updated>2020-12-07T00:00:00+09:00</updated><id>http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection</id><content type="html" xml:base="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/"><![CDATA[<p>SQL Injection에 대해 알아보자.</p>
+-->]]></content><author><name>박준수</name></author><category term="ICT" /><category term="서버" /><category term="3 계층 구조" /><category term="3-Tier Archtecture" /><summary type="html"><![CDATA[서버란 무엇인가.]]></summary></entry><entry><title type="html">SQL Injection</title><link href="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/" rel="alternate" type="text/html" title="SQL Injection" /><published>2020-12-07T00:00:00+09:00</published><updated>2020-12-07T00:00:00+09:00</updated><id>http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection</id><content type="html" xml:base="http://localhost:4000/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88/SQL-Injection/"><![CDATA[<p>SQL Injection에 대해 알아보자.</p>
 
 <p><strong>SQL Injection</strong>이란 공격자가 SQL 구문을 이용해 서버의 정보를 탈취하거나 인증을 우회하는 공격 기법이다.</p>
 
@@ -554,4 +310,129 @@ FW1(config)# arp outside 10.1.12.2 [mac address]
 </code></pre></div></div>
 <p><img src="/img/gns3TPFirewall/firewall_tp_r3.png" alt="rimg1" /></p>
 
-<p>ARP-cache를 초기화 해준뒤 ping을 보내보면 ping이 막힌 것을 볼 수 있다. 지정된 MAC 주소와 현재 R2의 MAC 주소가 달라서 기존에 전송되던 핑이 전송이 되지 않는다. 방화벽에서 inside와 outside의 MAC 주소를 잡아주고 arp-inspection 명령어를 통해 패킷들을 검사하고 OUTSIDE에서 접근하는 패킷의 경우 검사를 통과하지 못하면 no-flood 즉, 통과 시키지 않는다.</p>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[GNS3에서 방화벽 Transparent 모드를 실습해 보자.]]></summary></entry></feed>
+<p>ARP-cache를 초기화 해준뒤 ping을 보내보면 ping이 막힌 것을 볼 수 있다. 지정된 MAC 주소와 현재 R2의 MAC 주소가 달라서 기존에 전송되던 핑이 전송이 되지 않는다. 방화벽에서 inside와 outside의 MAC 주소를 잡아주고 arp-inspection 명령어를 통해 패킷들을 검사하고 OUTSIDE에서 접근하는 패킷의 경우 검사를 통과하지 못하면 no-flood 즉, 통과 시키지 않는다.</p>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[GNS3에서 방화벽 Transparent 모드를 실습해 보자.]]></summary></entry><entry><title type="html">IP Class들과 서브넷</title><link href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/" rel="alternate" type="text/html" title="IP Class들과 서브넷" /><published>2020-11-24T00:00:00+09:00</published><updated>2020-11-24T00:00:00+09:00</updated><id>http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class</id><content type="html" xml:base="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/IP-Class/"><![CDATA[<p>IP 클래스들에 대해 알아보자.</p>
+
+<p>IP의 경우 5개의 클래스로 이루어져있다. 그리고 클래스 별로 서브넷 마스크가 달라 이에 대한 숙지가 필요하다.</p>
+
+<h2>공인 IP와 사설 IP</h2>
+<p><strong>공인 IP</strong>란 전 세계에서 유일한 IP 주소로 ISP가 제공하는 IP 주소이다. 외부에 공개된 주소로 인터넷에 연결된 다른 PC로부터의 접근이 가능하다. 즉 외부 네트워크에 연결하기 위해 필요한 IP로 할당을 하지 못한다.</p>
+
+<p><strong>사설 IP</strong>란 일반 가정 및 회사 등의 할당된 IP 주소로, 로컬 IP라고도 불린다. 개인적인 내부 네트워크에서만 사용 가능한 IP를 의미한다.</p>
+
+<h2>A 클래스</h2>
+<p>0.0.0.0 ~ 127.255.255.255
+주로 대규모 네트워크에 사용된다. 처음 8비트만이 네트워크 ID에 해당되고 나머지 비트는 호스트 ID에 해당되며 서브넷 마스크는 255.0.0.0
+사설 IP의 경우 10.0.0.0 ~ 10.255.255.255</p>
+<h2>B 클래스</h2>
+<p>128.0.0.0 ~ 191.255.255.255
+네트워크 ID는 처음 16비트에 해당되며 서브넷 마스크는 255.255.0.0
+사설 IP의 경우 172.16.0.0 ~ 172.31.255.255</p>
+<h2>C 클래스</h2>
+<p>192.0.0.0 ~ 223.255.255.255
+네트워크 ID는 24비트가 해당되고 서브넷 마스크는 255.255.255.0
+사설 IP의 경우 192.168.0.0 ~ 192.168.255.255</p>
+<h2>D 클래스</h2>
+<p>224.0.0.0 ~ 239.255.255.255
+멀티캐스트 주소로 예약되어 있고 IP 할당에 이용되지 않는다.</p>
+<h2>E 클래스</h2>
+<p>240.0.0.0 ~ 255.255.255.255
+IANA에서 사용을 허가하지 않은 IP 대역.</p>
+
+<p>네트워크 관리사 문제를 보면 네트워크를 서브넷으로 나누는 문제가 나온다. 어떻게 나눌 수 있는지 알아보자.</p>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[IP 클래스들에 대해 알아보자.]]></summary></entry><entry><title type="html">파이썬</title><link href="http://localhost:4000/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python/" rel="alternate" type="text/html" title="파이썬" /><published>2020-11-16T00:00:00+09:00</published><updated>2020-11-16T00:00:00+09:00</updated><id>http://localhost:4000/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python</id><content type="html" xml:base="http://localhost:4000/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Python/"><![CDATA[<p>파이썬에 대해 알아보자.</p>
+
+<p>프로그래밍 언어엔 <strong>컴파일러 언어와 인터프리터 언어</strong>가 있다.</p>
+
+<h2>컴파일러 언어</h2>
+<p>보통 우리가 많이 사용했던 JAVA, C++, C 등은 컴파일러 언어라고한다. 컴파일러가 컴파일 과정에서 소스 코드를 기계언어로 바꾸고 이를 컴퓨터에서 동작시킨다. 반응성이 빠르지만 빌드 과정에서 시간이 소요되 작은 수정을 하더라도 빌드 시간이 오래 걸린다.</p>
+
+<h2>인터프리터 언어</h2>
+<p>인터프리터 언어의 경우 컴파일 과정이 없고, 바로 실행 된다. 한줄 한줄 해석해 바로 명령어를 실행하는데, 반응성은 떨어지지만 빌드 시간 등이 필요 없다. 스크립트 언어와 파이썬이 해당된다.</p>]]></content><author><name>박준수</name></author><category term="파이썬" /><summary type="html"><![CDATA[파이썬에 대해 알아보자.]]></summary></entry><entry><title type="html">프로토콜에 따른 패킷의 헤더</title><link href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-UDP-Header/" rel="alternate" type="text/html" title="프로토콜에 따른 패킷의 헤더" /><published>2020-11-16T00:00:00+09:00</published><updated>2020-11-16T00:00:00+09:00</updated><id>http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-UDP-Header</id><content type="html" xml:base="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Network-UDP-Header/"><![CDATA[<p>프로토콜에 따른 패킷의 헤더들에 대해 알아보자.</p>
+
+<h2>UDP 패킷 헤더</h2>
+
+<p><strong>UDP 패킷 헤더</strong>는 64비트로 16비트의 4가지 필드로 구성되어 있다.</p>
+
+<ul>
+  <li>Source Port Number: 송신 포트 번호</li>
+  <li>Destination Port Number: 수신 포트 번호</li>
+  <li>UDP Length: 패킷의 길이</li>
+  <li>UDP Checksum: 패킷 전체의 Checksum, 이 필드가 0일 경우 수신측은 체크섬을 계산하지 않는다.</li>
+</ul>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[프로토콜에 따른 패킷의 헤더들에 대해 알아보자.]]></summary></entry><entry><title type="html">DHCP</title><link href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/" rel="alternate" type="text/html" title="DHCP" /><published>2020-11-12T00:00:00+09:00</published><updated>2020-11-12T00:00:00+09:00</updated><id>http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP</id><content type="html" xml:base="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/DHCP/"><![CDATA[<p>DHCP란 무엇인가</p>
+
+<h2>DHCP</h2>
+
+<p><strong>Dynamic Host Configuration Protocol</strong>의 약자</p>
+
+<p>DHCP 서버가 하는 역할은 자신의 네트워크 안에 있는 클라이언트 컴퓨터가 부팅될 떄 자동으로 네트워크 설정(IP,서브넷 마스크, 게이트웨이 주소, DNS 서버 주소)을 할당해 주는 것이다.</p>
+
+<h2>서버의 동작 방식</h2>
+
+<p><strong>동적 할당</strong> : 네트워크 관리자가 일정 범위의 IP 주소를 지정하고  클라이언트의 요청에 따라 IP를 할당해 준다. 임대 개념으로 이뤄지고 임대 기간이 지나면 IP를 회수하고 다시 할당하는 방식이다.</p>
+
+<p><strong>자동 할당</strong> : 동적할당과 유사하나 클라이언트에 할당된 IP가 영구적으로 적용된다.</p>
+
+<p><strong>수동 할당</strong> : MAC 주소기반으로 이루어지고, 서브넷 범위 안에서 고정 IP를 할당하는 방법이다. 고정 할당이라고도 불리며 현업에서는 주로 이 방법이 사용된다.</p>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[DHCP란 무엇인가]]></summary></entry><entry><title type="html">메일 프로토콜과 구성요소</title><link href="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/" rel="alternate" type="text/html" title="메일 프로토콜과 구성요소" /><published>2020-11-12T00:00:00+09:00</published><updated>2020-11-12T00:00:00+09:00</updated><id>http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol</id><content type="html" xml:base="http://localhost:4000/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Mail-Protocol/"><![CDATA[<p>메일 프로토콜과 구성요소에 대해 알아보자.</p>
+
+<h2>메일 프로토콜</h2>
+
+<p><strong>SMTP</strong> : Simple Mail Transfer Protocol 클라이언트에서 메일을 보내거나 메일 서버끼리 메일을 주고 받을 떄 사용하는 프로토콜</p>
+
+<p><strong>POP3, IMAP3</strong> : 메일 서버에 있는 메일을 클라이언트로 가져오는 프로토콜</p>
+
+<p>보낼 때는 SMTP 받을 때는 POP3, IMAP3</p>
+
+<p><strong>차이점</strong>
+POP3의 경우 클라이언트가 서버의 메일을 가져오게 되면 서버의 메일은 삭제된다. IMAP3의 경우 클라이언트가 가져간다 하더라도 서버의 메일은 유지된다. 서버가 메일을 감당하기 힘들 경우 POP3를 사용하게 되면 서버의 비용이 준다는 장점이 있다. 요즘은 보통 IMAP을 사용합니다.</p>
+
+<p>구성 요소</p>
+
+<p>MTA, MUA, MDA, MRA, 메일 큐</p>
+
+<p><strong>MUA</strong>: Mail User Agnet 자신이 속한 메일 서버에 전송해 줍니다. 메일을 다운로드하거나 MTA로 업로드. SMTP에 의해 접속하며 인증과정 필요.</p>
+
+<p>ex) Thunderbird, Outlook, Evolution</p>
+
+<p><strong>MTA</strong>: Mail Transfer Agent. 다른 MTA나 메일 사용자에게 메일을 보내거나 받는 역할을 해줍니다.(RELAY 과정) 또한, 바이러스 및 스팸 메일과 같은 필터링 기능이 있다. 25포트를 사용하는 SMTP에 의해 이뤄진다.</p>
+
+<p>ex) sendmail,Qmail,Postfix</p>
+
+<p><strong>MDA</strong>: Mail Delivery Agent 메일 서버간 메일을 송신해줍니다. MTA한테 메일을 받아 사용자의 메일서버에 저장 및 운반하는 역할. 메일 서버의 메일을 MUA가 읽어 로컬 PC에 다운로드 시 IMAP POP3</p>
+
+<p>ex) Dovecot, Courier, Cyrus</p>
+
+<p><strong>메일 큐</strong>: 전송량이 많아 메일이 전송되지 않을 경우 메일이 보내지지 않는 경우가 많았다고 한다. 그래서 메일 큐를 생성해 메일을 보내지 못할 경우 큐에 저장을 해놓고 전송이 가능할 때 메일을 보내주는 개념이다.</p>
+
+<p><strong>MRA</strong>: Mail Retrieval Agent 리모트 서버에 있는 우편함으로부터 사용자의 MUA로 메시지를 가져오는 프로그램.
+&lt;!–</p>
+
+<p>dns mx(mailexchanger) 추가
+nslookup에서 지정한 도메인을 쳤을 경우 ip가 정확하면 성공.</p>
+
+<p>dns 설정을 자신이 설정한 ip로 설정해줘야합니다.
+sendmail-cf , dovecot 다운로드 
+이툴을 이용해서 할껀가봐
+/sendmail.cf
+85 localhost를 자신이 설정한 mail 도메인으로
+264 수정 루프백 아이피 제거</p>
+
+<p>/etc/mail/access에 지정한 도메인 추가</p>
+
+<p>restart 하고 makemap hash를 통해 재생성</p>
+
+<p>/etc/dovecot/conf.d/10-mail.conf
+25,116 : 주석제거
+121 : group mail 추가</p>
+
+<p>10-auth.conf
+10: no로 plaintext_auth를 가능하게</p>
+
+<p>10-ssl.conf
+8 :ssl yes</p>
+
+<p>user 추가</p>
+
+<p>sendmail, dovecot  재시작</p>
+
+<p>thunderbird 설치 후 자신에게 메일 보내보기</p>
+
+<p>thunderbird 설정 포트 110,25 서버 호스트 생성해준것으로, ssl은 사용하지 않고 인증은 평문패스워드와 커버로스 –&gt;</p>]]></content><author><name>박준수</name></author><category term="네트워크" /><summary type="html"><![CDATA[메일 프로토콜과 구성요소에 대해 알아보자.]]></summary></entry></feed>
